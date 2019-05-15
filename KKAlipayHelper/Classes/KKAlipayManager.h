@@ -42,7 +42,6 @@ typedef void(^ _Nullable KKAlipayBlock)(KKAlipayResultStatus status,NSDictionary
 - (void)setDebugEnabled:(BOOL)enable;
 
 
-
 /**
  处理客户端回调
  - (BOOL)application(UIApplication *)application openURL:(NSURL *)url
