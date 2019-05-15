@@ -1,0 +1,6 @@
+framework module Pods_KKAlipayHelper_Tests {
+  umbrella header "Pods-KKAlipayHelper_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

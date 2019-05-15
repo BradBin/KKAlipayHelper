@@ -1,0 +1,6 @@
+framework module KKAlipayHelper {
+  umbrella header "KKAlipayHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}

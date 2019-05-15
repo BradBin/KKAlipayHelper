@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D86308F980F2B0D98084B0138036B19 /* KKAlipayHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A1CB7CD56545E369D350682782FA39C /* KKAlipayHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73256EE62CCAD6E2C7C8E1BB8DC42F75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		8D1CDC8694EAD5A29F19395DDE94B4AF /* Pods-KKAlipayHelper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C18AAF7BB8A3A9839CCB5C079438F690 /* Pods-KKAlipayHelper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93B4597D228C0F570041B75B /* KKAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B4597A228C0F560041B75B /* KKAlipayManager.m */; };
+		93B4597E228C0F570041B75B /* KKAlipayHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B4597B228C0F560041B75B /* KKAlipayHelper.h */; };
+		93B4597F228C0F570041B75B /* KKAlipayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B4597C228C0F560041B75B /* KKAlipayManager.h */; };
+		E3379EE8B0B26A9E4253543B494A0DF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		E5EE75C4AC844B9A56638CDBD6ACEF4F /* Pods-KKAlipayHelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7529B5B4FC96D93E0577CE0B6356A285 /* Pods-KKAlipayHelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7EC79238E2A9E6ABCD21BE49044C630 /* Pods-KKAlipayHelper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F778D701AFECDC76DDD36E3537FC83 /* Pods-KKAlipayHelper_Tests-dummy.m */; };
+		EEC4677943F1B32EE743DC03F1EC5117 /* Pods-KKAlipayHelper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF3A0287B102570C2BE447018CC39FF /* Pods-KKAlipayHelper_Example-dummy.m */; };
+		F4AA3E1A6E0D505ED5F9AA439A542ED4 /* KKAlipayHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F817711EB3C612E98BF003A0B04A04BE /* KKAlipayHelper-dummy.m */; };
+		FDF6D742E60F36EF386EF3861BCC63D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88ADB68D99937EB162CE58E079D03DFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C154DF67E8B7B6E5F3FA1FD6C51E8BC;
+			remoteInfo = KKAlipayHelper;
+		};
+		D88143D88AB9B7A7C8731CB251D1B39F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E731994870CEAF96727D330646DFDBAD;
+			remoteInfo = "Pods-KKAlipayHelper_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14CE41F6BCCADCEA6582DDF1D2DC1F51 /* Pods-KKAlipayHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKAlipayHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
+		19787D2CAB5C02630CC5E97CAC3FBC8F /* Pods-KKAlipayHelper_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKAlipayHelper_Tests-Info.plist"; sourceTree = "<group>"; };
+		1CB90B00EE0F52BAD1DA42924BD6CA05 /* KKAlipayHelper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KKAlipayHelper-Info.plist"; sourceTree = "<group>"; };
+		1CF36AFCB826ED514DBEF39B40CE988C /* Pods-KKAlipayHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKAlipayHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1F5C2D9EE4E9B72243E1D3675E94215D /* Pods-KKAlipayHelper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKAlipayHelper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1FF3A0287B102570C2BE447018CC39FF /* Pods-KKAlipayHelper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKAlipayHelper_Example-dummy.m"; sourceTree = "<group>"; };
+		23F42FED685E22231AF9ED759B29D06E /* KKAlipayHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KKAlipayHelper.xcconfig; sourceTree = "<group>"; };
+		296237351ACEE00F36D6CE6AEC5FCC03 /* Pods-KKAlipayHelper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKAlipayHelper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2E9EE105CE05AC7C315EF0E877C0639F /* KKAlipayHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKAlipayHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CDE19801B4BEC60EBAA922A27AB0B7C /* KKAlipayHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKAlipayHelper-prefix.pch"; sourceTree = "<group>"; };
+		5921E4E7F96F21BE772B5D14E284BF9E /* Pods-KKAlipayHelper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKAlipayHelper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5A1CB7CD56545E369D350682782FA39C /* KKAlipayHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKAlipayHelper-umbrella.h"; sourceTree = "<group>"; };
+		7529B5B4FC96D93E0577CE0B6356A285 /* Pods-KKAlipayHelper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KKAlipayHelper_Tests-umbrella.h"; sourceTree = "<group>"; };
+		774A036908F58DDE5DC4E8F87B518874 /* Pods-KKAlipayHelper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KKAlipayHelper_Tests.modulemap"; sourceTree = "<group>"; };
+		84F778D701AFECDC76DDD36E3537FC83 /* Pods-KKAlipayHelper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKAlipayHelper_Tests-dummy.m"; sourceTree = "<group>"; };
+		93B4597A228C0F560041B75B /* KKAlipayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKAlipayManager.m; path = KKAlipayHelper/Classes/KKAlipayManager.m; sourceTree = "<group>"; };
+		93B4597B228C0F560041B75B /* KKAlipayHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKAlipayHelper.h; path = KKAlipayHelper/Classes/KKAlipayHelper.h; sourceTree = "<group>"; };
+		93B4597C228C0F560041B75B /* KKAlipayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKAlipayManager.h; path = KKAlipayHelper/Classes/KKAlipayManager.h; sourceTree = "<group>"; };
+		9D6CCA79EC7F08FB062C350097455BD2 /* Pods-KKAlipayHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKAlipayHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E98A7342FBD2A94FD05FE16194F15B8 /* Pods_KKAlipayHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKAlipayHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F541979BDE4C2190FEAC43898CC7DB7 /* Pods-KKAlipayHelper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKAlipayHelper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A102B0FEBF13E226E8F49D0DD1CF4BF6 /* Pods-KKAlipayHelper_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKAlipayHelper_Example-Info.plist"; sourceTree = "<group>"; };
+		B90742663CB7647398EA21D3F4D7E9FE /* Pods-KKAlipayHelper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKAlipayHelper_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BC403FD1F23979066444A66296B4C494 /* Pods_KKAlipayHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKAlipayHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18AAF7BB8A3A9839CCB5C079438F690 /* Pods-KKAlipayHelper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KKAlipayHelper_Example-umbrella.h"; sourceTree = "<group>"; };
+		C3B46B01E3928A5775C6FDE3EF48D4AB /* Pods-KKAlipayHelper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KKAlipayHelper_Example.modulemap"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DE32D19509954204B6284BE1C9A24ABE /* KKAlipayHelper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = KKAlipayHelper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DF5A8DD912A16E135CDA45ACC81CA94D /* Pods-KKAlipayHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKAlipayHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E184D4040FDCBEFE72D59DFF2DEBB676 /* KKAlipayHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KKAlipayHelper.modulemap; sourceTree = "<group>"; };
+		E9A3DF3CF77109B704119052108D3C9E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F2676D75A654D7003D7CCC3856FC3A07 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F817711EB3C612E98BF003A0B04A04BE /* KKAlipayHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KKAlipayHelper-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		284C2AEAC4A82597BDD8BB61463DBF57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF6D742E60F36EF386EF3861BCC63D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DF23316FECDB0E4A236E7704EFE5B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73256EE62CCAD6E2C7C8E1BB8DC42F75 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7BDF4286AE4B639C688F70C9721224 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3379EE8B0B26A9E4253543B494A0DF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05CEA624B3555C86DF56E5740A0B5F31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E9EE105CE05AC7C315EF0E877C0639F /* KKAlipayHelper.framework */,
+				BC403FD1F23979066444A66296B4C494 /* Pods_KKAlipayHelper_Example.framework */,
+				9E98A7342FBD2A94FD05FE16194F15B8 /* Pods_KKAlipayHelper_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A30648C6C9D705EE0335532CE44A8C4 /* KKAlipayHelper */ = {
+			isa = PBXGroup;
+			children = (
+				93B4597B228C0F560041B75B /* KKAlipayHelper.h */,
+				93B4597C228C0F560041B75B /* KKAlipayManager.h */,
+				93B4597A228C0F560041B75B /* KKAlipayManager.m */,
+				8CAED41B173D2A899E721AA185708B93 /* Pod */,
+				97B24764965F573238DD9C497CBFFD5B /* Support Files */,
+			);
+			name = KKAlipayHelper;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		30D6710C6248C48DC26F42687091A14E /* Pods-KKAlipayHelper_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C3B46B01E3928A5775C6FDE3EF48D4AB /* Pods-KKAlipayHelper_Example.modulemap */,
+				9F541979BDE4C2190FEAC43898CC7DB7 /* Pods-KKAlipayHelper_Example-acknowledgements.markdown */,
+				5921E4E7F96F21BE772B5D14E284BF9E /* Pods-KKAlipayHelper_Example-acknowledgements.plist */,
+				1FF3A0287B102570C2BE447018CC39FF /* Pods-KKAlipayHelper_Example-dummy.m */,
+				B90742663CB7647398EA21D3F4D7E9FE /* Pods-KKAlipayHelper_Example-frameworks.sh */,
+				A102B0FEBF13E226E8F49D0DD1CF4BF6 /* Pods-KKAlipayHelper_Example-Info.plist */,
+				C18AAF7BB8A3A9839CCB5C079438F690 /* Pods-KKAlipayHelper_Example-umbrella.h */,
+				9D6CCA79EC7F08FB062C350097455BD2 /* Pods-KKAlipayHelper_Example.debug.xcconfig */,
+				14CE41F6BCCADCEA6582DDF1D2DC1F51 /* Pods-KKAlipayHelper_Example.release.xcconfig */,
+			);
+			name = "Pods-KKAlipayHelper_Example";
+			path = "Target Support Files/Pods-KKAlipayHelper_Example";
+			sourceTree = "<group>";
+		};
+		5F8F69A1814803D201C3648D089545EF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A30648C6C9D705EE0335532CE44A8C4 /* KKAlipayHelper */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8CAED41B173D2A899E721AA185708B93 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DE32D19509954204B6284BE1C9A24ABE /* KKAlipayHelper.podspec */,
+				E9A3DF3CF77109B704119052108D3C9E /* LICENSE */,
+				F2676D75A654D7003D7CCC3856FC3A07 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		97B24764965F573238DD9C497CBFFD5B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E184D4040FDCBEFE72D59DFF2DEBB676 /* KKAlipayHelper.modulemap */,
+				23F42FED685E22231AF9ED759B29D06E /* KKAlipayHelper.xcconfig */,
+				F817711EB3C612E98BF003A0B04A04BE /* KKAlipayHelper-dummy.m */,
+				1CB90B00EE0F52BAD1DA42924BD6CA05 /* KKAlipayHelper-Info.plist */,
+				4CDE19801B4BEC60EBAA922A27AB0B7C /* KKAlipayHelper-prefix.pch */,
+				5A1CB7CD56545E369D350682782FA39C /* KKAlipayHelper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KKAlipayHelper";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BEA8E491A14F822A8ADA2923C7898D08 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				30D6710C6248C48DC26F42687091A14E /* Pods-KKAlipayHelper_Example */,
+				E837E487B81FC86AAEC4DBA2E781F675 /* Pods-KKAlipayHelper_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				5F8F69A1814803D201C3648D089545EF /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				05CEA624B3555C86DF56E5740A0B5F31 /* Products */,
+				BEA8E491A14F822A8ADA2923C7898D08 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E837E487B81FC86AAEC4DBA2E781F675 /* Pods-KKAlipayHelper_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				774A036908F58DDE5DC4E8F87B518874 /* Pods-KKAlipayHelper_Tests.modulemap */,
+				296237351ACEE00F36D6CE6AEC5FCC03 /* Pods-KKAlipayHelper_Tests-acknowledgements.markdown */,
+				1F5C2D9EE4E9B72243E1D3675E94215D /* Pods-KKAlipayHelper_Tests-acknowledgements.plist */,
+				84F778D701AFECDC76DDD36E3537FC83 /* Pods-KKAlipayHelper_Tests-dummy.m */,
+				19787D2CAB5C02630CC5E97CAC3FBC8F /* Pods-KKAlipayHelper_Tests-Info.plist */,
+				7529B5B4FC96D93E0577CE0B6356A285 /* Pods-KKAlipayHelper_Tests-umbrella.h */,
+				DF5A8DD912A16E135CDA45ACC81CA94D /* Pods-KKAlipayHelper_Tests.debug.xcconfig */,
+				1CF36AFCB826ED514DBEF39B40CE988C /* Pods-KKAlipayHelper_Tests.release.xcconfig */,
+			);
+			name = "Pods-KKAlipayHelper_Tests";
+			path = "Target Support Files/Pods-KKAlipayHelper_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		70E546C3653A8117C350F3F2BAB33223 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1CDC8694EAD5A29F19395DDE94B4AF /* Pods-KKAlipayHelper_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B144545287ED9AE5DF83FC8C5AB92C24 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5EE75C4AC844B9A56638CDBD6ACEF4F /* Pods-KKAlipayHelper_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F024978B34F0F13171392AD82ED36D8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B4597F228C0F570041B75B /* KKAlipayManager.h in Headers */,
+				93B4597E228C0F570041B75B /* KKAlipayHelper.h in Headers */,
+				3D86308F980F2B0D98084B0138036B19 /* KKAlipayHelper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7C154DF67E8B7B6E5F3FA1FD6C51E8BC /* KKAlipayHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A55898A728B6464E76F101016CF3E411 /* Build configuration list for PBXNativeTarget "KKAlipayHelper" */;
+			buildPhases = (
+				F024978B34F0F13171392AD82ED36D8D /* Headers */,
+				39322FF5DA5819DF177D29D7DF4EB818 /* Sources */,
+				284C2AEAC4A82597BDD8BB61463DBF57 /* Frameworks */,
+				A4F9681D5D83C996BC6D47691931E094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KKAlipayHelper;
+			productName = KKAlipayHelper;
+			productReference = 2E9EE105CE05AC7C315EF0E877C0639F /* KKAlipayHelper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCA1B5E2E648A655D59F5E069849381C /* Pods-KKAlipayHelper_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9E0DD52E0CDAACFC636BAFDDA7B3816 /* Build configuration list for PBXNativeTarget "Pods-KKAlipayHelper_Tests" */;
+			buildPhases = (
+				B144545287ED9AE5DF83FC8C5AB92C24 /* Headers */,
+				E129D0AC5650B337EEB519BBC7F270DA /* Sources */,
+				5B7BDF4286AE4B639C688F70C9721224 /* Frameworks */,
+				284809927B8979C5E31D601F4CE31172 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01368887C21313C61845E4F97C0FF6A8 /* PBXTargetDependency */,
+			);
+			name = "Pods-KKAlipayHelper_Tests";
+			productName = "Pods-KKAlipayHelper_Tests";
+			productReference = 9E98A7342FBD2A94FD05FE16194F15B8 /* Pods_KKAlipayHelper_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E731994870CEAF96727D330646DFDBAD /* Pods-KKAlipayHelper_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B8746323C3F2D8BA1729E82D25E2F71 /* Build configuration list for PBXNativeTarget "Pods-KKAlipayHelper_Example" */;
+			buildPhases = (
+				70E546C3653A8117C350F3F2BAB33223 /* Headers */,
+				4ED3306D6D355ED99FB8BCD7925351BF /* Sources */,
+				53DF23316FECDB0E4A236E7704EFE5B7 /* Frameworks */,
+				C79EA0DCC5023DA02ACC3677DD21F25E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6ABB88ACA5EAF9409525608A940CF00 /* PBXTargetDependency */,
+			);
+			name = "Pods-KKAlipayHelper_Example";
+			productName = "Pods-KKAlipayHelper_Example";
+			productReference = BC403FD1F23979066444A66296B4C494 /* Pods_KKAlipayHelper_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 05CEA624B3555C86DF56E5740A0B5F31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C154DF67E8B7B6E5F3FA1FD6C51E8BC /* KKAlipayHelper */,
+				E731994870CEAF96727D330646DFDBAD /* Pods-KKAlipayHelper_Example */,
+				CCA1B5E2E648A655D59F5E069849381C /* Pods-KKAlipayHelper_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		284809927B8979C5E31D601F4CE31172 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4F9681D5D83C996BC6D47691931E094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79EA0DCC5023DA02ACC3677DD21F25E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39322FF5DA5819DF177D29D7DF4EB818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AA3E1A6E0D505ED5F9AA439A542ED4 /* KKAlipayHelper-dummy.m in Sources */,
+				93B4597D228C0F570041B75B /* KKAlipayManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED3306D6D355ED99FB8BCD7925351BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC4677943F1B32EE743DC03F1EC5117 /* Pods-KKAlipayHelper_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E129D0AC5650B337EEB519BBC7F270DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7EC79238E2A9E6ABCD21BE49044C630 /* Pods-KKAlipayHelper_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01368887C21313C61845E4F97C0FF6A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KKAlipayHelper_Example";
+			target = E731994870CEAF96727D330646DFDBAD /* Pods-KKAlipayHelper_Example */;
+			targetProxy = D88143D88AB9B7A7C8731CB251D1B39F /* PBXContainerItemProxy */;
+		};
+		E6ABB88ACA5EAF9409525608A940CF00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KKAlipayHelper;
+			target = 7C154DF67E8B7B6E5F3FA1FD6C51E8BC /* KKAlipayHelper */;
+			targetProxy = 88ADB68D99937EB162CE58E079D03DFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5FF75E7CD51989503F95710A0DBF036B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F42FED685E22231AF9ED759B29D06E /* KKAlipayHelper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KKAlipayHelper/KKAlipayHelper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KKAlipayHelper/KKAlipayHelper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KKAlipayHelper/KKAlipayHelper.modulemap";
+				PRODUCT_MODULE_NAME = KKAlipayHelper;
+				PRODUCT_NAME = KKAlipayHelper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66ECF22249DE165A30F8692477EA63DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14CE41F6BCCADCEA6582DDF1D2DC1F51 /* Pods-KKAlipayHelper_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KKAlipayHelper_Example/Pods-KKAlipayHelper_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KKAlipayHelper_Example/Pods-KKAlipayHelper_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79B872BB953C1A5262E4B614FADC49C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D6CCA79EC7F08FB062C350097455BD2 /* Pods-KKAlipayHelper_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KKAlipayHelper_Example/Pods-KKAlipayHelper_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KKAlipayHelper_Example/Pods-KKAlipayHelper_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9303CEC0EC33133A1615D92166DF45DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F42FED685E22231AF9ED759B29D06E /* KKAlipayHelper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KKAlipayHelper/KKAlipayHelper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KKAlipayHelper/KKAlipayHelper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KKAlipayHelper/KKAlipayHelper.modulemap";
+				PRODUCT_MODULE_NAME = KKAlipayHelper;
+				PRODUCT_NAME = KKAlipayHelper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D07204E93D513304CD5B991B9ADC421F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CF36AFCB826ED514DBEF39B40CE988C /* Pods-KKAlipayHelper_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KKAlipayHelper_Tests/Pods-KKAlipayHelper_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KKAlipayHelper_Tests/Pods-KKAlipayHelper_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6245E8A2138E8FAECD7D468D2462B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF5A8DD912A16E135CDA45ACC81CA94D /* Pods-KKAlipayHelper_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KKAlipayHelper_Tests/Pods-KKAlipayHelper_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KKAlipayHelper_Tests/Pods-KKAlipayHelper_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B8746323C3F2D8BA1729E82D25E2F71 /* Build configuration list for PBXNativeTarget "Pods-KKAlipayHelper_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79B872BB953C1A5262E4B614FADC49C6 /* Debug */,
+				66ECF22249DE165A30F8692477EA63DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
+				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A55898A728B6464E76F101016CF3E411 /* Build configuration list for PBXNativeTarget "KKAlipayHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9303CEC0EC33133A1615D92166DF45DD /* Debug */,
+				5FF75E7CD51989503F95710A0DBF036B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9E0DD52E0CDAACFC636BAFDDA7B3816 /* Build configuration list for PBXNativeTarget "Pods-KKAlipayHelper_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6245E8A2138E8FAECD7D468D2462B5B /* Debug */,
+				D07204E93D513304CD5B991B9ADC421F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

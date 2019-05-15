@@ -1,0 +1,22 @@
+{
+  "name": "KKAlipayHelper",
+  "version": "0.1.0",
+  "summary": "A short description of KKAlipayHelper.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/BradBin/KKAlipayHelper",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "BradBin": "youbin@kkorange.com"
+  },
+  "source": {
+    "git": "https://github.com/BradBin/KKAlipayHelper.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KKAlipayHelper/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - KKAlipayHelper (0.1.0)
+
+DEPENDENCIES:
+  - KKAlipayHelper (from `../`)
+
+EXTERNAL SOURCES:
+  KKAlipayHelper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KKAlipayHelper: 177897a648227df259c034e32384347e3c68d620
+
+PODFILE CHECKSUM: 268b32462aa7989d3bd260aba67fb4b5c7e82afa
+
+COCOAPODS: 1.6.1
