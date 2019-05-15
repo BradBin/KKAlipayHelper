@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'KKAlipayHelper_Example' do
+  pod 'KKAlipayHelper', :path => '../'
+
+  target 'KKAlipayHelper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
