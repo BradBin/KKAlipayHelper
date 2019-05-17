@@ -38,6 +38,7 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'KKAlipayHelper/Classes/**/*.h'
   s.requires_arc = true
+  s.static_framework = true
   s.frameworks = 'UIKit', 'Foundation'
   s.dependency 'AlipaySDK-iOS', '~> 15.5.9'
   
