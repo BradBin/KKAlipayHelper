@@ -1,16 +1,23 @@
 PODS:
-  - KKAlipayHelper (0.1.0)
+  - AlipaySDK-iOS (15.5.9)
+  - KKAlipayHelper (1.0.0):
+    - AlipaySDK-iOS (~> 15.5.9)
 
 DEPENDENCIES:
   - KKAlipayHelper (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AlipaySDK-iOS
 
 EXTERNAL SOURCES:
   KKAlipayHelper:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KKAlipayHelper: 177897a648227df259c034e32384347e3c68d620
+  AlipaySDK-iOS: 1c5283b30977a24acecc0114662697f7dc78f618
+  KKAlipayHelper: 1265d59e05aef6665d0547c0b52cb43a507b67b9
 
-PODFILE CHECKSUM: 268b32462aa7989d3bd260aba67fb4b5c7e82afa
+PODFILE CHECKSUM: 370c601bbcded700957cd685ea05bc54146ad554
 
 COCOAPODS: 1.6.1
