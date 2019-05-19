@@ -35,12 +35,27 @@ typedef void(^ _Nullable KKAlipayBlock)(KKAlipayResultStatus status,NSDictionary
 + (instancetype)shared;
 
 /**
+ 是否安装支付宝App,默认是false:没有安装
+
+ @return 是否安装支付宝
+ */
+- (BOOL)isAlipayAppInstalled;
+
+/**
  是否是开发环境,默认:false正式环境,反之开发环境
  
  @param enable 运行环境标识
  */
 - (void)setDebugEnabled:(BOOL)enable;
 
+/**
+ 拉起支付宝支付
+
+ @param order 支付签名,此签名由服务器签名订单后生成
+ @param scheme  url scheme
+ @param completion 结果回调
+ */
+- (void)payOrder:(NSString *)order scheme:(NSString *)scheme completion:(KKAlipayBlock)completion;
 
 /**
  处理客户端回调

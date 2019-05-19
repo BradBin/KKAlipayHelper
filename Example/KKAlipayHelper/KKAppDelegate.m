@@ -12,6 +12,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    
+    NSLog(@"%@",[KKAlipayManager.shared isAlipayAppInstalled] ? @"安装了支付宝":@"没有安装了支付宝");
     // Override point for customization after application launch.
     return YES;
 }
@@ -41,6 +44,18 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    [KKAlipayManager.shared handleOpenURL:url sourceApplication:sourceApplication];
+    return true;
+}
+
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options{
+    [KKAlipayManager.shared handleOpenURL:url];
+    return true;
 }
 
 @end
