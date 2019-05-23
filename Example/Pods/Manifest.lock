@@ -1,23 +1,51 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - AlipaySDK-iOS (15.5.9)
   - KKAlipayHelper (1.0.0):
     - AlipaySDK-iOS (~> 15.5.9)
+  - Masonry (1.1.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - AFNetworking
   - KKAlipayHelper (from `../`)
+  - Masonry
+  - YYKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - AlipaySDK-iOS
+    - Masonry
+    - YYKit
 
 EXTERNAL SOURCES:
   KKAlipayHelper:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   AlipaySDK-iOS: 1c5283b30977a24acecc0114662697f7dc78f618
-  KKAlipayHelper: 1265d59e05aef6665d0547c0b52cb43a507b67b9
+  KKAlipayHelper: cab341ff694039c3a97492645543df8152efd243
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 370c601bbcded700957cd685ea05bc54146ad554
+PODFILE CHECKSUM: 3d8e8bac0f1f99ecb1fa7a47a50d768652e7efe7
 
 COCOAPODS: 1.6.1

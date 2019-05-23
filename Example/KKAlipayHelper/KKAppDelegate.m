@@ -7,13 +7,12 @@
 //
 
 #import "KKAppDelegate.h"
+#import <KKAlipayHelper/KKAlipayHelper.h>
 
 @implementation KKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    
     NSLog(@"%@",[KKAlipayManager.shared isAlipayAppInstalled] ? @"安装了支付宝":@"没有安装了支付宝");
     // Override point for customization after application launch.
     return YES;
@@ -51,7 +50,6 @@
     [KKAlipayManager.shared handleOpenURL:url sourceApplication:sourceApplication];
     return true;
 }
-
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options{
     [KKAlipayManager.shared handleOpenURL:url];
