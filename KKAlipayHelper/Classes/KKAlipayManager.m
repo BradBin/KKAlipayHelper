@@ -18,9 +18,13 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
  */
 @property (nonatomic,assign) BOOL isDebug;
 /**
- 支付回调block
+ 支付成功回调block
  */
-@property (nonatomic, copy) KKAlipayBlock completionBlock;
+@property (nonatomic, copy) KKAlipayBlock success;
+/**
+ 支付失败回调block
+ */
+@property (nonatomic, copy) KKAlipayBlock failure;
 
 @end
 
@@ -52,7 +56,7 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
     _isDebug = enable;
 }
 
--(void)payOrder:(NSString *)order scheme:(NSString *)scheme completion:(KKAlipayBlock)completion{
+-(void)payOrder:(NSString *)order scheme:(NSString *)scheme success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure{
     if (order == nil) {
         return;
     }
@@ -62,10 +66,10 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
     if ([self isAlipayAppInstalled]) {
         return;
     }
-    if (completion) {
-        self.completionBlock = completion;
-    }
-    
+  
+    self.success = success;
+    self.failure = failure;
+ 
     NSDictionary *pama = @{
                            @"fromAppUrlScheme":scheme,
                            @"requestType"     :kkSafepay,
@@ -80,33 +84,24 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
     NSString *openURLString =  [NSString stringWithFormat:@"%@%@",kkAlipayClient,encodeString];
     NSURL *openURL          = [NSURL URLWithString:openURLString];
     
-    if (@available(iOS 10 , *)) {
-        [UIApplication.sharedApplication openURL:openURL options:@{UIApplicationOpenURLOptionsSourceApplicationKey:@true} completionHandler:^(BOOL success) {
-            if (success) {
-                
-            }else{
-                
-            }
-        }];
-    }else{
-         [UIApplication.sharedApplication openURL:openURL];
-    }
+    
+    [AlipaySDK.defaultService payOrder:@"" fromScheme:scheme callback:^(NSDictionary *resultDic) {
+        
+        
+    }];
+   
 }
 
 -(BOOL)handleOpenURL:(NSURL *)url{
     if ([url.host isEqualToString:kkSafepay]) {
         // 支付跳转支付宝钱包进行支付，处理支付结果
         [AlipaySDK.defaultService processAuthResult:url standbyCallback:^(NSDictionary *result) {
-            if (self.completionBlock) {
-                
-            }
+           
         }];
         
         // 授权跳转支付宝钱包进行支付，处理支付结果
         [AlipaySDK.defaultService processAuth_V2Result:url standbyCallback:^(NSDictionary *result) {
-            if (self.completionBlock) {
-                
-            }
+          
         }];
     }
     return true;
@@ -116,16 +111,12 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
     if ([url.host isEqualToString:kkSafepay]) {
         // 支付跳转支付宝钱包进行支付，处理支付结果
         [AlipaySDK.defaultService processAuthResult:url standbyCallback:^(NSDictionary *result) {
-            if (self.completionBlock) {
-                
-            }
+          
         }];
         
         // 授权跳转支付宝钱包进行支付，处理支付结果
         [AlipaySDK.defaultService processAuth_V2Result:url standbyCallback:^(NSDictionary *result) {
-            if (self.completionBlock) {
-                
-            }
+          
         }];
     }
     return true;
