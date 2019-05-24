@@ -52,7 +52,7 @@
 		1A09C9B06957480BF6267F70A65350AE /* YYSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DFA181B2E3D2F73622F97FD6C6E367 /* YYSentinel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1AA7FC49CD2FF50DCFDA20C36A11F754 /* YYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9127C62D0DD6768D2A431A9F257D6492 /* YYTextView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1B1C23667CF30D0A1A00A65F6D32F721 /* _YYWebImageSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2195A4B0540B748D6CB0F01ABF8F5BD1 /* _YYWebImageSetter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1C8487F2C922F669AAF5417CBCAD2FA2 /* KKAlipayHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB32F13FF2AE5BD0828CEBB11F4EBC4F /* KKAlipayHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B1D86C6C1AAC128320571951494308F /* KKRSASigHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 381E212427858D1C525B5E2F484467DC /* KKRSASigHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1D88D10AAAE2C8AC7222D698E55D5E8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 611B4E42F39F97248D972B0BDF68F2E0 /* CoreGraphics.framework */; };
 		1E4C2B7E07259DD5B60C4FE6A8A70C6F /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D3FBD412E6E19E8AE838015C7240833 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F26D9C9743C34BA3192657804CC2DE6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5A33A5267C18AF3D79BC367C3C4401 /* CoreText.framework */; };
@@ -91,17 +91,17 @@
 		3B807134668D13EDA62281779D93DD84 /* NSNotificationCenter+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 617AAAD8D0F89772954F26DC5A47E6AB /* NSNotificationCenter+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DF33BF6C1C780A1DAF16E2D472A437A /* YYTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4FDD64F206F0E91D2804DC3143DEEB /* YYTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F4F9D22DE7AB2101BF73BFF21630EEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0355499B58A4F829F65CC06765061F /* Foundation.framework */; };
-		3F502D4224B4D48DD428CFBC2DACB836 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0355499B58A4F829F65CC06765061F /* Foundation.framework */; };
 		3F811FF6E30312F90080211023781A2A /* YYTextAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 002902FF61677E3A662D9141A0EE998B /* YYTextAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		410D54AF745D47B23C5C62596E22BA00 /* KKAlipayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F16FEF6F13AA296121A0025F9DAE3217 /* KKAlipayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4193ED1E70EA36BDB91D74ED490C02CB /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F48A6A79670FA5CC6FB11E3A4E34B9 /* ViewController+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		423A8A33AC05C9D6A9D93E02F53DB5D3 /* NSNotificationCenter+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9870186280ABE6C1797DB4A2C0F0189A /* NSNotificationCenter+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		446E063ED3F984A1DA822D850E4A9AEC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E711DF317DB3E2565417418A0CE562F6 /* Accelerate.framework */; };
 		45E2D64C9E4557F2CF7B83D6645BD72E /* YYThreadSafeDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7392173378D90E6FEF04241EBFABEECD /* YYThreadSafeDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47937D96D8646E9A515A7DDD127F0DEE /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFD6F877A3E36D5C6986FE70A6D0DC /* YYDiskCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4A6826018043CF8E70DF3B30B8A0A078 /* KKAlipayHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 96E935F4C25FA5AFFCE750CC919E7D5C /* KKAlipayHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BC2837A288255BCCD0170708212237D /* YYLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = EB780ADB4E05D3C1D94CE50987603072 /* YYLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C50BF8D21A64571DF0882C09006FE40 /* YYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C507A407B327EF2C48AFFF5CAE0B93 /* YYCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D34AE8A02A3CE4667345185107C13B5 /* YYTextContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A8C07EF82872FD544AABC53701C06C /* YYTextContainerView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4F0C50AE4C23D21C8ABD82FA1C582B6A /* KKAlipayHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 86F3E52BA2240FD79D3869AEE0092033 /* KKAlipayHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F88B19926B4A1D3C54637B97241FB46 /* CALayer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A102E37AFEFF862594AD3B5D4DF7034D /* CALayer+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4FDED973490EB6A8908D2671154FDB89 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A0E3C9C451AD61574488C432EC4D4333 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		515E406F40920C2ED1995C8AE26EC072 /* UITableView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C9380EB5E042B7FD1355E4A59B606239 /* UITableView+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -109,6 +109,7 @@
 		51B96A8C215F53B7DA81166EBDE0F558 /* YYKitMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A50564D9B9EFDEFA5183CC14F3649AE /* YYKitMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		562EC55A88AF300771A210EB10129B54 /* UIButton+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1966B78F154DA749C547DCFD199371 /* UIButton+YYWebImage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		567B4BF4309674A8523DF1E20D4671F2 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 580E8B348139D73CD12F31F1FDAF21A9 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		569F2A252A3773957E73BFF79C2EB680 /* KKAlipayHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9193C51653052F02EC1C1D3765B008 /* KKAlipayHelper-dummy.m */; };
 		56C517516AD8B76D1015AD38DBECD279 /* YYTextKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D137B8BA14603D5DB1C482A03A84E54 /* YYTextKeyboardManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		56C756C671414F691BBDF25C0927C851 /* YYGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3EA4BE18536CF87A959544B0A5FC6 /* YYGestureRecognizer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		576980FC14A7D615FD9DAB5D65E0B819 /* YYTextEffectWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD29A19D9C2552E08BB35596FCB32D7 /* YYTextEffectWindow.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -117,6 +118,7 @@
 		5C74D82210F7B0166953A97D2EFC0F78 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDA01CE8EA8D56C98A998A3814425B0 /* MASLayoutConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5D2CD4C3D7D923C1736C1BBD0BE818F4 /* YYImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 96219C94BC02C5EDF38BC26F49B4F473 /* YYImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D4EC675498227C1D9E475CCCD7BF5B9 /* NSThread+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D249FD533D902376801157EDAA7863 /* NSThread+YYAdd.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5E16D4E0A90D885D091FBCDD743D54C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0355499B58A4F829F65CC06765061F /* Foundation.framework */; };
 		5E6E0B85F6966F95F6101EE5C6E0576B /* NSTimer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B2782FA13EBE9A7587BB5B00D58B14A6 /* NSTimer+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5E937C1F77B56FF3D1F58D6E4B24C64F /* YYSpriteSheetImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 95FAEF0BB7C3517D57A1C477EAEA1FBD /* YYSpriteSheetImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F764747C30296F0C3ED85B108310620 /* CALayer+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = B95A308B670EABCA18C43942FA22388B /* CALayer+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -129,7 +131,6 @@
 		64B7DEF0CAF7D783383612C034885888 /* YYTextEffectWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC8A2E33C60B4FA53C34BF6C3B25EE9 /* YYTextEffectWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64F850113B7979CCAFD1FA112BE2E8CB /* YYKVStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E7B0597621BDCD703C5646F21320F8 /* YYKVStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		650939188A054FDB98225F7439BC4250 /* UIApplication+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9AAD9F92D6279574B6CE75A802C175 /* UIApplication+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		668A70D8982A4B94C4FB5284E8D5ACEA /* KKAlipayHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 309F1907817622AF535B72AF5E12C10D /* KKAlipayHelper-dummy.m */; };
 		67843D6939DCFB92F851C88AD853EB8B /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 4265B6555E21EEDAAB90FD5A349096A2 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		683B79C85C9639C255C3EDC7706B3389 /* YYTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = F100F0283EA1786E7B464FAF2B83AF35 /* YYTextInput.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		68E0D0BF261A7C26E0505D179C7089FC /* YYTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB967EF59207B4BE31D9352AAF0D88E /* YYTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -157,6 +158,7 @@
 		891AAE82F26D8020470FC40F20A46C6C /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA76D37824589EE3D739548868F4AD5 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B2874F670DAE042FD93DFB056E59C52 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A92CD17F172BCA6A14CBE98B43227B1F /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C29DB52EA013B7FADB5A1E973B7D033 /* UIButton+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B91052C48C35FE7DE6E6A63E3A9E66D /* UIButton+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C743D5100826797CB5C1821411901B1 /* KKAlipayHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 686031896F6B736118FFB6F423493B9A /* KKAlipayHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D5EE6BB338ED3A344CF1BC961A66E2F /* NSNumber+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62426E6F11CF8FBDAD5758ABACF0E9 /* NSNumber+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8D93AB50B33BEF421BBED3284BD10641 /* YYTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CFD3C23F48BD76950600FF21807761E /* YYTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EAA944BA51CB7F9D32FE53FC063AE94 /* YYCGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8696B77DB3BC6B2409F2DDF908C864 /* YYCGUtilities.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -178,8 +180,8 @@
 		9B4D9E80D31B0B9EBE56273D5298CBE7 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ACB611AD86C1D38FBDA868E07373506 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BCFFC02AC83396DF8C3BCE25127C64A /* UIBezierPath+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 39598E814CFD109A6618E7F3D75DB151 /* UIBezierPath+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DC6BA543AAB502176D1001A554F424A /* YYFrameImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EDAA074AB0D9A93B5103DBF71D4CBE2A /* YYFrameImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DE76AEF0EAA54D54823CCA01E1FEF91 /* KKAlipayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D90907B4EE3233C3D8913F68E9EBE2 /* KKAlipayItem.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A11514B04EE24CBEC48373C4FE045F80 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01816ECA8D172977C800F46A551EF204 /* SystemConfiguration.framework */; };
-		A18D994F66F9EEF2D9C9F3378A43266C /* KKAlipayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD5F754E142954E1C8895CBA6D9C52C /* KKAlipayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1C3DF8AED05A9B905AE114BF1CC7EBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0355499B58A4F829F65CC06765061F /* Foundation.framework */; };
 		A24BEB385953B1D1861C20AF23B72844 /* UIImage+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E2BDE9DC943C7630EE6D07AEF7F3DD /* UIImage+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A2DDD1A7C41CEDACAE296264C64A7B42 /* YYTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7C68B1808B7CDF43AAFB96852DA51E /* YYTextParser.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -198,6 +200,7 @@
 		AF423A439A92BA29DCDC57464A6D6159 /* YYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = DD10CCB4E63F1CC82F869D65239B6E00 /* YYDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0B36AB5F703703C2EB1FF4B2877D365 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C509973391E27C7DEBC4752C1CBF00 /* YYAnimatedImageView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B0FE1AC303CE8CB9F7C029AD1D3D1E12 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B918B56F340A1E29A80649B91C1985CA /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B18409B5DD7DFBB05EB98C86ED9A0BD1 /* KKAlipayItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B0307EA7A83FE06A54DC6E5EFBAF0D1 /* KKAlipayItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B29F59F1CB0972BC4BADAC18678E5B72 /* MKAnnotationView+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AC72A0DFB970BC864B239C15A20E4BE /* MKAnnotationView+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2B6D08058A2B4ED1579E5A4CE7AD1BD /* YYTextSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B12C73DB9AE70CFD86E9FB0A5699F6 /* YYTextSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B389977FD19043FD1E0919BE837A824F /* YYKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 339C6FC4625CBF0D97B8263AEFE7BDCB /* YYKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -225,11 +228,13 @@
 		D291925F0CAEBC063B12582E0CAA4132 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F18B77AEE7FCDC6D285BEB8A9EA38E /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D40CBA5D18624A55246A0CC6F6A33C55 /* UIApplication+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CBF7321B9C0DF204295E62FD0C3624C /* UIApplication+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D45AB1E9DE05F20E5CA30F6ABB9513B5 /* Pods-KKAlipayHelper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FFED7C403F106C8E168AD1ADA07265A /* Pods-KKAlipayHelper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5225D7B2714B6458E8EA346E7B12696 /* KKRSASigHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1347D6E4466DF1D14CE06A0953E69751 /* KKRSASigHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6C1EC3E76613DB2A3B4A4D062E860DC /* YYTextRubyAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC42F1010DD0F23888964FFA7307262 /* YYTextRubyAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D792DDFCA19BA8D0254B38B766CFB4EF /* YYSentinel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC7E24FC89C60A8F539F8EEB287FD15 /* YYSentinel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7E7866E546F837EA85D2B6FA8557D15 /* YYTextDebugOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A74FDEEA575AE5E5789B288C7C2105D /* YYTextDebugOption.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D873737F2F665C37011A14444F01262C /* YYTextKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 91996A5C4F56B73294C66EABA05C9C06 /* YYTextKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8A21F6A9A8E946798AC6F8BB78DF9DD /* YYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E2F681137D3070A057C8303D382A45 /* YYTimer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D99277E4DA049E5DB97E80A53FB23403 /* KKAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D087A35F4284A5B0D197A2424DF809 /* KKAlipayManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DA0A7622B7FE2A24C44D7ED89342A08A /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D91A40F37C8817008429EC415799D7 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DABD0FCA66B5F2FEED65987E91D2C315 /* UIColor+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 168839C513634E73E999A951F27C4E07 /* UIColor+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DADF5150B678D8FAB699D940DED2C71D /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8320A5C49C296726FBCCDC095C18A1BF /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -272,7 +277,6 @@
 		F6A6DA274EF3D8AF9462AFEED30C7E43 /* YYDispatchQueuePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 459FDB637AE9E4A043209A15589B8BD5 /* YYDispatchQueuePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6C582FA43285BD969E615823ED4339F /* YYGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C33930E70C5E45E73616E8FED2EB5FC /* YYGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6EE7CCF964F5B77B117089764AA4E1A /* UIDevice+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = FC548BBDDD96DECADA0112588943B322 /* UIDevice+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F765DEA8E2BA16370197CA0885D17D1A /* KKAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8915EE2FF2E5F2DA6B6C7E90F16CB3DD /* KKAlipayManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FB3E46B9FF369995DA726ADEE05D8763 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 06ADB87637E458239DB06FD0AFB057E0 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCF7EAE0C1443709B71DA394BF62C387 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C0EB29D8AA7B2B8FEF7C634330482A /* AFAutoPurgingImageCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FD06E6355CEFC9115CF866BCC23366BE /* YYTextArchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E7047262C1331A0841EDAF0EBF2576E /* YYTextArchiver.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -282,6 +286,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2E3E770C304F0262ADE194D3BC433BC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DAACFD3C7DBAFD79F0BC194768C9424;
+			remoteInfo = "AlipaySDK-iOS";
+		};
 		476EE10BC5B8D045CDABC7BBFE71A8DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -300,7 +311,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 69A364BD2D5F412442F285BC1D2F16C1;
+			remoteGlobalIDString = 8A27CCE4A8B758425CD324F7B9756CD0;
 			remoteInfo = KKAlipayHelper;
 		};
 		6C1037497188643EE67530907D5CEEE0 /* PBXContainerItemProxy */ = {
@@ -309,13 +320,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 64908377FC47CBE2E0EA0FA3CC30D3C1;
 			remoteInfo = Masonry;
-		};
-		D2044A434DB3EE9D9F8CF1DFD9EF7BC5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1DAACFD3C7DBAFD79F0BC194768C9424;
-			remoteInfo = "AlipaySDK-iOS";
 		};
 		D88143D88AB9B7A7C8731CB251D1B39F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -350,6 +354,7 @@
 		06ADB87637E458239DB06FD0AFB057E0 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		06B12C73DB9AE70CFD86E9FB0A5699F6 /* YYTextSelectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextSelectionView.h; path = YYKit/Text/Component/YYTextSelectionView.h; sourceTree = "<group>"; };
 		0727E770B0A451131C718CC9CE7562E4 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		073C4E672BF470F90850DA385169BC51 /* KKAlipayHelper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KKAlipayHelper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		074790847CDA9808AAA5949A117CDA0C /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		0797E3B2191854F40C9B97F9A1987635 /* YYTextLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextLine.h; path = YYKit/Text/Component/YYTextLine.h; sourceTree = "<group>"; };
 		08B6BC8246189492D7122F48E551D90D /* Pods-KKAlipayHelper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KKAlipayHelper_Example.modulemap"; sourceTree = "<group>"; };
@@ -359,27 +364,30 @@
 		0B7D3C9BAB97613A63F39429C9C8E7A1 /* NSArray+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+YYAdd.m"; path = "YYKit/Base/Foundation/NSArray+YYAdd.m"; sourceTree = "<group>"; };
 		0C0E122E1B79E50AEBB6E5D3DB2C0DC4 /* NSThread+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSThread+YYAdd.h"; path = "YYKit/Base/Foundation/NSThread+YYAdd.h"; sourceTree = "<group>"; };
 		0CDA01CE8EA8D56C98A998A3814425B0 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		0DE543B68F87B2D09C839D1E363D4B9D /* KKAlipayHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KKAlipayHelper.modulemap; sourceTree = "<group>"; };
 		0F3B6B9739F1F77119F261A2B907D9D6 /* YYTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTransaction.h; path = YYKit/Utility/YYTransaction.h; sourceTree = "<group>"; };
 		0F697C5BDA8AA219C4273269B506B97D /* UIScrollView+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+YYAdd.m"; path = "YYKit/Base/UIKit/UIScrollView+YYAdd.m"; sourceTree = "<group>"; };
 		10744A6B2A22D69FE2EEC7137EFFC950 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		117AADBCDC9D9CE0233FB30331C1D216 /* UITextField+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+YYAdd.m"; path = "YYKit/Base/UIKit/UITextField+YYAdd.m"; sourceTree = "<group>"; };
 		131E36023A935D6358718CC1257F000B /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		1347D6E4466DF1D14CE06A0953E69751 /* KKRSASigHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKRSASigHelper.h; path = KKAlipayHelper/Classes/KKRSASigHelper.h; sourceTree = "<group>"; };
 		134B3E7A6D1B7C3E37B2FE1FAC6CEFA6 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
 		14D91A40F37C8817008429EC415799D7 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYKit/Model/YYClassInfo.h; sourceTree = "<group>"; };
 		15B8938DD4EF1245B85F8AC732CB00E0 /* YYTextMagnifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextMagnifier.m; path = YYKit/Text/Component/YYTextMagnifier.m; sourceTree = "<group>"; };
 		168839C513634E73E999A951F27C4E07 /* UIColor+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+YYAdd.m"; path = "YYKit/Base/UIKit/UIColor+YYAdd.m"; sourceTree = "<group>"; };
 		17B2E0BB8913C38D9E5698217024AB00 /* UIImageView+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+YYWebImage.h"; path = "YYKit/Image/Categories/UIImageView+YYWebImage.h"; sourceTree = "<group>"; };
+		17C7AFB9985A29144192CE3B590FA032 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = KKAlipayHelper/Classes/Libraries/libcrypto.a; sourceTree = "<group>"; };
 		1978DC52372BD43E33A1B6386FEC8E53 /* Pods-KKAlipayHelper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKAlipayHelper_Tests-dummy.m"; sourceTree = "<group>"; };
 		19DF3CA4A4FD8CCFAF27A249D826C37E /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		1AE3EA4BE18536CF87A959544B0A5FC6 /* YYGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYGestureRecognizer.m; path = YYKit/Utility/YYGestureRecognizer.m; sourceTree = "<group>"; };
 		1C2FF0D456B46FD405257FEF5E12FDD8 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
-		1E6537218DD4CED351FF14168D829439 /* KKAlipayHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKAlipayHelper-prefix.pch"; sourceTree = "<group>"; };
 		1EFF3D935B2BDD3A9B3165FDA41C1838 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		1FA7003499DFE879B4AC1953320D7AAD /* YYMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYMemoryCache.m; path = YYKit/Cache/YYMemoryCache.m; sourceTree = "<group>"; };
 		1FC7E24FC89C60A8F539F8EEB287FD15 /* YYSentinel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYSentinel.h; path = YYKit/Utility/YYSentinel.h; sourceTree = "<group>"; };
 		218295DE9B10B32EEF36EF904E58F1DC /* YYFrameImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYFrameImage.m; path = YYKit/Image/YYFrameImage.m; sourceTree = "<group>"; };
 		2195A4B0540B748D6CB0F01ABF8F5BD1 /* _YYWebImageSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _YYWebImageSetter.m; path = YYKit/Image/Categories/_YYWebImageSetter.m; sourceTree = "<group>"; };
 		2280615D299DD7FDE402B6EA7598E0E2 /* YYWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYWeakProxy.h; path = YYKit/Utility/YYWeakProxy.h; sourceTree = "<group>"; };
+		22D90907B4EE3233C3D8913F68E9EBE2 /* KKAlipayItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAlipayItem.m; path = KKAlipayHelper/Classes/KKAlipayItem.m; sourceTree = "<group>"; };
 		23902515AEFC08D6FA037CCD130BFCB2 /* Pods-KKAlipayHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKAlipayHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		253AFAD1F0FE2DF359961A652ACA1C72 /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYSpriteSheetImage.m; path = YYKit/Image/YYSpriteSheetImage.m; sourceTree = "<group>"; };
 		256117080B956FABC0BF4937B5B6F505 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
@@ -394,15 +402,17 @@
 		2F065959CA7066F2914A37258B3B6ECE /* YYAsyncLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYAsyncLayer.h; path = YYKit/Utility/YYAsyncLayer.h; sourceTree = "<group>"; };
 		2F7C68B1808B7CDF43AAFB96852DA51E /* YYTextParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextParser.m; path = YYKit/Text/String/YYTextParser.m; sourceTree = "<group>"; };
 		3019D398A6E3BA8CCB8F58153D7200FA /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		309F1907817622AF535B72AF5E12C10D /* KKAlipayHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KKAlipayHelper-dummy.m"; sourceTree = "<group>"; };
 		32D0EA65596C6C6699B283AFAF795B0F /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		339C6FC4625CBF0D97B8263AEFE7BDCB /* YYKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKeychain.h; path = YYKit/Utility/YYKeychain.h; sourceTree = "<group>"; };
 		35E531CE3675FDBE1FD10C0E5CAAB6E1 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		37DDF4EAC932B8956D2A752F69C6170A /* YYImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImageCache.m; path = YYKit/Image/YYImageCache.m; sourceTree = "<group>"; };
+		381E212427858D1C525B5E2F484467DC /* KKRSASigHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKRSASigHelper.m; path = KKAlipayHelper/Classes/KKRSASigHelper.m; sourceTree = "<group>"; };
 		388380BD503CF1D6D8CE90F363A0384E /* UIControl+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+YYAdd.m"; path = "YYKit/Base/UIKit/UIControl+YYAdd.m"; sourceTree = "<group>"; };
 		39598E814CFD109A6618E7F3D75DB151 /* UIBezierPath+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBezierPath+YYAdd.h"; path = "YYKit/Base/UIKit/UIBezierPath+YYAdd.h"; sourceTree = "<group>"; };
+		39675F7439C39312737150C2A824B084 /* KKAlipayHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KKAlipayHelper.xcconfig; sourceTree = "<group>"; };
 		3AC72A0DFB970BC864B239C15A20E4BE /* MKAnnotationView+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKAnnotationView+YYWebImage.h"; path = "YYKit/Image/Categories/MKAnnotationView+YYWebImage.h"; sourceTree = "<group>"; };
 		3C7DDFBFD46B4F8FB8DB034689654DCB /* Pods_KKAlipayHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKAlipayHelper_Tests.framework; path = "Pods-KKAlipayHelper_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E3A767F1FADA225B94E8BEE7F0138DC /* KKAlipayHelper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KKAlipayHelper-Info.plist"; sourceTree = "<group>"; };
 		3E985968189D5A9A41DA3FD641C4C693 /* UIGestureRecognizer+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+YYAdd.h"; path = "YYKit/Base/UIKit/UIGestureRecognizer+YYAdd.h"; sourceTree = "<group>"; };
 		3F546C1444C6FF3FDEC0CBAE331F990F /* NSObject+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYAdd.h"; path = "YYKit/Base/Foundation/NSObject+YYAdd.h"; sourceTree = "<group>"; };
 		3F679DF896050557DD495BE55E770846 /* _YYWebImageSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _YYWebImageSetter.h; path = YYKit/Image/Categories/_YYWebImageSetter.h; sourceTree = "<group>"; };
@@ -415,7 +425,6 @@
 		443DB7DDC96656C5D7A3FCE29F40029F /* YYTextRubyAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRubyAnnotation.m; path = YYKit/Text/String/YYTextRubyAnnotation.m; sourceTree = "<group>"; };
 		459FDB637AE9E4A043209A15589B8BD5 /* YYDispatchQueuePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYDispatchQueuePool.h; path = YYKit/Utility/YYDispatchQueuePool.h; sourceTree = "<group>"; };
 		46C6933078CC0ABA41BC7FAA18DDADF6 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
-		47A3B54D1B04229F746A9A28A5911073 /* KKAlipayHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KKAlipayHelper.modulemap; sourceTree = "<group>"; };
 		4AA76D37824589EE3D739548868F4AD5 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
 		4AF18F8070FEC8CBC9ADB68903195963 /* CALayer+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+YYWebImage.h"; path = "YYKit/Image/Categories/CALayer+YYWebImage.h"; sourceTree = "<group>"; };
 		4AF6A5392DFF1005A0967CBB33A846C1 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
@@ -437,6 +446,8 @@
 		5806CADBE3FAB775D609DF3C23B85C6C /* YYImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImageCoder.h; path = YYKit/Image/YYImageCoder.h; sourceTree = "<group>"; };
 		580E8B348139D73CD12F31F1FDAF21A9 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		59458FF8114D89C35E72A5723F62C015 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		5A8A60C9063434B6E51446E5469F4A10 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = KKAlipayHelper/Classes/Libraries/libssl.a; sourceTree = "<group>"; };
+		5B0307EA7A83FE06A54DC6E5EFBAF0D1 /* KKAlipayItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAlipayItem.h; path = KKAlipayHelper/Classes/KKAlipayItem.h; sourceTree = "<group>"; };
 		5B91052C48C35FE7DE6E6A63E3A9E66D /* UIButton+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+YYWebImage.h"; path = "YYKit/Image/Categories/UIButton+YYWebImage.h"; sourceTree = "<group>"; };
 		5E5A33A5267C18AF3D79BC367C3C4401 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		5EA6CF2842A056698B9731D2C9F894DA /* AFNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AFNetworking-Info.plist"; sourceTree = "<group>"; };
@@ -449,10 +460,10 @@
 		64AE42BB95BECE6C6BF8ED2314D333E7 /* NSNumber+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+YYAdd.h"; path = "YYKit/Base/Foundation/NSNumber+YYAdd.h"; sourceTree = "<group>"; };
 		64EC249B0A389AA0C0F7D6633DA30A77 /* YYFileHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYFileHash.h; path = YYKit/Utility/YYFileHash.h; sourceTree = "<group>"; };
 		65AF26A84184EFC498425B3F96F94E9F /* YYAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYAnimatedImageView.h; path = YYKit/Image/YYAnimatedImageView.h; sourceTree = "<group>"; };
+		686031896F6B736118FFB6F423493B9A /* KKAlipayHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKAlipayHelper-umbrella.h"; sourceTree = "<group>"; };
 		6A50564D9B9EFDEFA5183CC14F3649AE /* YYKitMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKitMacro.h; path = YYKit/Base/YYKitMacro.h; sourceTree = "<group>"; };
 		6B452045AF995BEA5DFB633C9FF582C0 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
 		6CA2E67A615C6DFD42ADF7833AC8280E /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		6F29D5C8E3C9475381DC283C0F2F77ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		6F32A1F0A225A4428905652C32701DBF /* Pods-KKAlipayHelper_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKAlipayHelper_Example-Info.plist"; sourceTree = "<group>"; };
 		7392173378D90E6FEF04241EBFABEECD /* YYThreadSafeDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYThreadSafeDictionary.h; path = YYKit/Utility/YYThreadSafeDictionary.h; sourceTree = "<group>"; };
 		73D249FD533D902376801157EDAA7863 /* NSThread+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSThread+YYAdd.m"; path = "YYKit/Base/Foundation/NSThread+YYAdd.m"; sourceTree = "<group>"; };
@@ -482,13 +493,12 @@
 		84ABA7748ED4C605D4475B09793B5988 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYKit/Model/NSObject+YYModel.m"; sourceTree = "<group>"; };
 		8596F60B77844F52FE19FF7177B52791 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		86DFA181B2E3D2F73622F97FD6C6E367 /* YYSentinel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYSentinel.m; path = YYKit/Utility/YYSentinel.m; sourceTree = "<group>"; };
+		86F3E52BA2240FD79D3869AEE0092033 /* KKAlipayHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAlipayHelper.h; path = KKAlipayHelper/Classes/KKAlipayHelper.h; sourceTree = "<group>"; };
 		87DF0DF90C03D056C73C5481C57DF56C /* YYKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYKit-umbrella.h"; sourceTree = "<group>"; };
 		88E2BDE9DC943C7630EE6D07AEF7F3DD /* UIImage+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+YYAdd.m"; path = "YYKit/Base/UIKit/UIImage+YYAdd.m"; sourceTree = "<group>"; };
-		8915EE2FF2E5F2DA6B6C7E90F16CB3DD /* KKAlipayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAlipayManager.m; path = KKAlipayHelper/Classes/KKAlipayManager.m; sourceTree = "<group>"; };
 		89397D46537BBB378DBBC890F73850ED /* YYWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYWebImageManager.h; path = YYKit/Image/YYWebImageManager.h; sourceTree = "<group>"; };
 		8BB2C40A34B5C6ECDAB3868F2B660A28 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		8BD29A19D9C2552E08BB35596FCB32D7 /* YYTextEffectWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextEffectWindow.m; path = YYKit/Text/Component/YYTextEffectWindow.m; sourceTree = "<group>"; };
-		8BD5F754E142954E1C8895CBA6D9C52C /* KKAlipayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAlipayManager.h; path = KKAlipayHelper/Classes/KKAlipayManager.h; sourceTree = "<group>"; };
 		8C0CE2A23F453491A682F9E1A5F8B927 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		8CBF7321B9C0DF204295E62FD0C3624C /* UIApplication+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+YYAdd.h"; path = "YYKit/Base/UIKit/UIApplication+YYAdd.h"; sourceTree = "<group>"; };
 		8CFD3C23F48BD76950600FF21807761E /* YYTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTimer.h; path = YYKit/Utility/YYTimer.h; sourceTree = "<group>"; };
@@ -503,9 +513,11 @@
 		91EB141217C6B69A8828117B1B44B5CE /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
 		91F918859E45F98E7049EBC9876865AF /* NSKeyedUnarchiver+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSKeyedUnarchiver+YYAdd.h"; path = "YYKit/Base/Foundation/NSKeyedUnarchiver+YYAdd.h"; sourceTree = "<group>"; };
 		9292659AC985C286805E18B6556635C2 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		94D087A35F4284A5B0D197A2424DF809 /* KKAlipayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAlipayManager.m; path = KKAlipayHelper/Classes/KKAlipayManager.m; sourceTree = "<group>"; };
+		95549E130B4A25633AD20DACDE44929D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		95FAEF0BB7C3517D57A1C477EAEA1FBD /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYSpriteSheetImage.h; path = YYKit/Image/YYSpriteSheetImage.h; sourceTree = "<group>"; };
 		96219C94BC02C5EDF38BC26F49B4F473 /* YYImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImage.h; path = YYKit/Image/YYImage.h; sourceTree = "<group>"; };
-		96E935F4C25FA5AFFCE750CC919E7D5C /* KKAlipayHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAlipayHelper.h; path = KKAlipayHelper/Classes/KKAlipayHelper.h; sourceTree = "<group>"; };
+		9755473FBA85297CEC1141E41162DCE8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		977382FEE5D379BBFA1DEB839C20D703 /* UIGestureRecognizer+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+YYAdd.m"; path = "YYKit/Base/UIKit/UIGestureRecognizer+YYAdd.m"; sourceTree = "<group>"; };
 		9870186280ABE6C1797DB4A2C0F0189A /* NSNotificationCenter+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+YYAdd.m"; path = "YYKit/Base/Foundation/NSNotificationCenter+YYAdd.m"; sourceTree = "<group>"; };
 		9A74FDEEA575AE5E5789B288C7C2105D /* YYTextDebugOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextDebugOption.m; path = YYKit/Text/Component/YYTextDebugOption.m; sourceTree = "<group>"; };
@@ -540,6 +552,7 @@
 		AE4FDD64F206F0E91D2804DC3143DEEB /* YYTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextInput.h; path = YYKit/Text/Component/YYTextInput.h; sourceTree = "<group>"; };
 		AF41BC61F852C7A4DB6084C1AC30A799 /* YYCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYCache.m; path = YYKit/Cache/YYCache.m; sourceTree = "<group>"; };
 		B033438EE26E3BD71D9E6A8B88C96ADC /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
+		B1396C69E24A65517DA2D506BCF9EC33 /* KKAlipayHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKAlipayHelper-prefix.pch"; sourceTree = "<group>"; };
 		B2782FA13EBE9A7587BB5B00D58B14A6 /* NSTimer+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+YYAdd.m"; path = "YYKit/Base/Foundation/NSTimer+YYAdd.m"; sourceTree = "<group>"; };
 		B2E3351CA302463AE12B8DECE1DCFD33 /* YYThreadSafeArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYThreadSafeArray.h; path = YYKit/Utility/YYThreadSafeArray.h; sourceTree = "<group>"; };
 		B3B1B9E1F6900AEF08341A59688E1E62 /* NSObject+YYAddForARC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYAddForARC.m"; path = "YYKit/Base/Foundation/NSObject+YYAddForARC.m"; sourceTree = "<group>"; };
@@ -572,10 +585,8 @@
 		CD7A87DEFDCF0A98C964CC3A37A6DAE1 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
 		CDF77F7217511C2C72C177DE118F0D5E /* YYFileHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYFileHash.m; path = YYKit/Utility/YYFileHash.m; sourceTree = "<group>"; };
 		D102F5C6F10E3EAF95EBF932F95DEB99 /* YYKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYKit.modulemap; sourceTree = "<group>"; };
-		D47552DFBE30D88E1F079294D394D13F /* KKAlipayHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KKAlipayHelper.xcconfig; sourceTree = "<group>"; };
 		D4A78B11AC51B8BB5DF338DF1B0EB0F9 /* YYTextMagnifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextMagnifier.h; path = YYKit/Text/Component/YYTextMagnifier.h; sourceTree = "<group>"; };
 		D5D55B790894A5E8068FC6027A990789 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		D6643D933C4F6DA7F6B90D69813AE746 /* KKAlipayHelper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KKAlipayHelper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D7DD00C5693F962ADEE37F3C65AA93D7 /* UIFont+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+YYAdd.m"; path = "YYKit/Base/UIKit/UIFont+YYAdd.m"; sourceTree = "<group>"; };
 		D84B511D14673AF89F910EF84D9F544A /* NSString+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+YYAdd.h"; path = "YYKit/Base/Foundation/NSString+YYAdd.h"; sourceTree = "<group>"; };
 		D8920C9BF67D5C33F2B7E26D8E40F12C /* YYTextRunDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRunDelegate.m; path = YYKit/Text/String/YYTextRunDelegate.m; sourceTree = "<group>"; };
@@ -583,7 +594,6 @@
 		DC51184512730659CADC5150BF1BA8DE /* UIScreen+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScreen+YYAdd.h"; path = "YYKit/Base/UIKit/UIScreen+YYAdd.h"; sourceTree = "<group>"; };
 		DCF173A5DE9F8BA24242C1DFD240F97F /* YYTextLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLayout.m; path = YYKit/Text/Component/YYTextLayout.m; sourceTree = "<group>"; };
 		DD10CCB4E63F1CC82F869D65239B6E00 /* YYDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYDiskCache.h; path = YYKit/Cache/YYDiskCache.h; sourceTree = "<group>"; };
-		DD566125077D002755F06A8E3979AF69 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		E20B3A71C22D5CFF0E53B79A74E462FD /* YYWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYWebImageOperation.h; path = YYKit/Image/YYWebImageOperation.h; sourceTree = "<group>"; };
 		E20FEF595ECC337F213730794A77D0D1 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
 		E3EA2F3CE0EF7ABAA3DB21E63E3B399D /* YYTextContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextContainerView.h; path = YYKit/Text/Component/YYTextContainerView.h; sourceTree = "<group>"; };
@@ -592,12 +602,11 @@
 		E6A5338B771C375F1A426504E0008644 /* NSDate+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+YYAdd.m"; path = "YYKit/Base/Foundation/NSDate+YYAdd.m"; sourceTree = "<group>"; };
 		E711DF317DB3E2565417418A0CE562F6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		E7557BE5D48F18665D62AD9E6F25C60F /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
-		E7BED1B566BAE37DE88AA5BEB25236F4 /* KKAlipayHelper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KKAlipayHelper-Info.plist"; sourceTree = "<group>"; };
 		E98F21AAE2D3AA56AE37CAEFC9C37982 /* UIPasteboard+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPasteboard+YYText.h"; path = "YYKit/Text/String/UIPasteboard+YYText.h"; sourceTree = "<group>"; };
-		EB32F13FF2AE5BD0828CEBB11F4EBC4F /* KKAlipayHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKAlipayHelper-umbrella.h"; sourceTree = "<group>"; };
 		EB780ADB4E05D3C1D94CE50987603072 /* YYLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYLabel.h; path = YYKit/Text/YYLabel.h; sourceTree = "<group>"; };
 		EB90856027019A1DFCCD3A7338D71CDF /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
 		EB99F01A816B29749C4EBD2091394A89 /* YYTextArchiver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextArchiver.m; path = YYKit/Text/String/YYTextArchiver.m; sourceTree = "<group>"; };
+		EC9193C51653052F02EC1C1D3765B008 /* KKAlipayHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KKAlipayHelper-dummy.m"; sourceTree = "<group>"; };
 		ED6299F6E63AA55312207463E6A21AB5 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Vendor/WebP.framework; sourceTree = "<group>"; };
 		ED92EBA0AF20ED90E36D3D365FA2C999 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		EDAA074AB0D9A93B5103DBF71D4CBE2A /* YYFrameImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYFrameImage.h; path = YYKit/Image/YYFrameImage.h; sourceTree = "<group>"; };
@@ -606,6 +615,7 @@
 		EFA7B9F9759B956B6EAFD0BAE31B42FA /* YYMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYMemoryCache.h; path = YYKit/Cache/YYMemoryCache.h; sourceTree = "<group>"; };
 		F0107CE880014CFE973C79FDE04C0061 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		F100F0283EA1786E7B464FAF2B83AF35 /* YYTextInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextInput.m; path = YYKit/Text/Component/YYTextInput.m; sourceTree = "<group>"; };
+		F16FEF6F13AA296121A0025F9DAE3217 /* KKAlipayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAlipayManager.h; path = KKAlipayHelper/Classes/KKAlipayManager.h; sourceTree = "<group>"; };
 		F19439F06380AAD24E1135C7AB5C4BD5 /* YYTextUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextUtilities.m; path = YYKit/Text/String/YYTextUtilities.m; sourceTree = "<group>"; };
 		F234FB259C410BF42EA34C63F697F2C9 /* NSObject+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYAdd.m"; path = "YYKit/Base/Foundation/NSObject+YYAdd.m"; sourceTree = "<group>"; };
 		F2D561E1E218B5B97747D55E8E1ACA69 /* YYKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYKeychain.m; path = YYKit/Utility/YYKeychain.m; sourceTree = "<group>"; };
@@ -649,6 +659,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43637C190DF077B788D3A32693A70C8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E16D4E0A90D885D091FBCDD743D54C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5B7BDF4286AE4B639C688F70C9721224 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -676,14 +694,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFDB12EC5EB041D24DD33F200A8DE5E4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F502D4224B4D48DD428CFBC2DACB836 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FC8435A689BD825A0D545C2D74D0F932 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -708,16 +718,6 @@
 			name = Security;
 			sourceTree = "<group>";
 		};
-		0FDA2E7FB3C7527150EB348BED4586FE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				D6643D933C4F6DA7F6B90D69813AE746 /* KKAlipayHelper.podspec */,
-				DD566125077D002755F06A8E3979AF69 /* LICENSE */,
-				6F29D5C8E3C9475381DC283C0F2F77ED /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		12FC6D8556F70EC0D9EF9A859FEA6453 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -727,6 +727,20 @@
 				5EF815E0EE7160CE891DC3FE83B46C91 /* YYKit */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		196D9D3B7C7A5653F8A8A05C724563AA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DE543B68F87B2D09C839D1E363D4B9D /* KKAlipayHelper.modulemap */,
+				39675F7439C39312737150C2A824B084 /* KKAlipayHelper.xcconfig */,
+				EC9193C51653052F02EC1C1D3765B008 /* KKAlipayHelper-dummy.m */,
+				3E3A767F1FADA225B94E8BEE7F0138DC /* KKAlipayHelper-Info.plist */,
+				B1396C69E24A65517DA2D506BCF9EC33 /* KKAlipayHelper-prefix.pch */,
+				686031896F6B736118FFB6F423493B9A /* KKAlipayHelper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KKAlipayHelper";
 			sourceTree = "<group>";
 		};
 		22745B007F69965E03FDD0E8DD5DFF12 /* NSURLSession */ = {
@@ -797,18 +811,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		438B70E32B23E4540D304352343704C3 /* Support Files */ = {
+		4A6A4E34E155B55958666434B68130B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				47A3B54D1B04229F746A9A28A5911073 /* KKAlipayHelper.modulemap */,
-				D47552DFBE30D88E1F079294D394D13F /* KKAlipayHelper.xcconfig */,
-				309F1907817622AF535B72AF5E12C10D /* KKAlipayHelper-dummy.m */,
-				E7BED1B566BAE37DE88AA5BEB25236F4 /* KKAlipayHelper-Info.plist */,
-				1E6537218DD4CED351FF14168D829439 /* KKAlipayHelper-prefix.pch */,
-				EB32F13FF2AE5BD0828CEBB11F4EBC4F /* KKAlipayHelper-umbrella.h */,
+				17C7AFB9985A29144192CE3B590FA032 /* libcrypto.a */,
+				5A8A60C9063434B6E51446E5469F4A10 /* libssl.a */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KKAlipayHelper";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4B2AEAAA43B968CE7D11DBB943E89731 /* Frameworks */ = {
@@ -817,6 +826,14 @@
 				82687ED5E34DF79C0286188718C42187 /* AlipaySDK.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53425C326C8F53C565953B2BA6DFE3C9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9647835E47C11C3710A06818FAE92E5 /* KKAlipayHelper */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		5D5887BEB346E11CDB1D845479FEC53D /* Products */ = {
@@ -1075,19 +1092,6 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
-		AF43FB94391B9182348D4ED88C2E6DA9 /* KKAlipayHelper */ = {
-			isa = PBXGroup;
-			children = (
-				96E935F4C25FA5AFFCE750CC919E7D5C /* KKAlipayHelper.h */,
-				8BD5F754E142954E1C8895CBA6D9C52C /* KKAlipayManager.h */,
-				8915EE2FF2E5F2DA6B6C7E90F16CB3DD /* KKAlipayManager.m */,
-				0FDA2E7FB3C7527150EB348BED4586FE /* Pod */,
-				438B70E32B23E4540D304352343704C3 /* Support Files */,
-			);
-			name = KKAlipayHelper;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		B59E634E3B71641069E100EFD72F0CA3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1100,6 +1104,24 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		B9647835E47C11C3710A06818FAE92E5 /* KKAlipayHelper */ = {
+			isa = PBXGroup;
+			children = (
+				86F3E52BA2240FD79D3869AEE0092033 /* KKAlipayHelper.h */,
+				5B0307EA7A83FE06A54DC6E5EFBAF0D1 /* KKAlipayItem.h */,
+				22D90907B4EE3233C3D8913F68E9EBE2 /* KKAlipayItem.m */,
+				F16FEF6F13AA296121A0025F9DAE3217 /* KKAlipayManager.h */,
+				94D087A35F4284A5B0D197A2424DF809 /* KKAlipayManager.m */,
+				1347D6E4466DF1D14CE06A0953E69751 /* KKRSASigHelper.h */,
+				381E212427858D1C525B5E2F484467DC /* KKRSASigHelper.m */,
+				4A6A4E34E155B55958666434B68130B4 /* Frameworks */,
+				E075AAD76214E552E2E109FCB469892B /* Pod */,
+				196D9D3B7C7A5653F8A8A05C724563AA /* Support Files */,
+			);
+			name = KKAlipayHelper;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CA75A5EFA2EC07995DB9041CBDC8F86B /* Support Files */ = {
@@ -1149,7 +1171,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				F0901350490ECF96D19ACC2AAB9472C4 /* Development Pods */,
+				53425C326C8F53C565953B2BA6DFE3C9 /* Development Pods */,
 				35E526B6E4CA6A7E89FE8C5A5B1F2259 /* Frameworks */,
 				12FC6D8556F70EC0D9EF9A859FEA6453 /* Pods */,
 				5D5887BEB346E11CDB1D845479FEC53D /* Products */,
@@ -1184,6 +1206,16 @@
 			name = UIKit;
 			sourceTree = "<group>";
 		};
+		E075AAD76214E552E2E109FCB469892B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				073C4E672BF470F90850DA385169BC51 /* KKAlipayHelper.podspec */,
+				95549E130B4A25633AD20DACDE44929D /* LICENSE */,
+				9755473FBA85297CEC1141E41162DCE8 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		EBA434D8059A4BFCE5DF1E668AFC4D25 /* Pods-KKAlipayHelper_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1198,14 +1230,6 @@
 			);
 			name = "Pods-KKAlipayHelper_Tests";
 			path = "Target Support Files/Pods-KKAlipayHelper_Tests";
-			sourceTree = "<group>";
-		};
-		F0901350490ECF96D19ACC2AAB9472C4 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AF43FB94391B9182348D4ED88C2E6DA9 /* KKAlipayHelper */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		F57C0034053E34CAA320412B637059BD /* Targets Support Files */ = {
@@ -1239,13 +1263,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		57AAD6D5D5D13B45FBBCE8672F1158E1 /* Headers */ = {
+		113F05E9BFE3D6F70ACABB58501F07A9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C8487F2C922F669AAF5417CBCAD2FA2 /* KKAlipayHelper-umbrella.h in Headers */,
-				4A6826018043CF8E70DF3B30B8A0A078 /* KKAlipayHelper.h in Headers */,
-				A18D994F66F9EEF2D9C9F3378A43266C /* KKAlipayManager.h in Headers */,
+				8C743D5100826797CB5C1821411901B1 /* KKAlipayHelper-umbrella.h in Headers */,
+				4F0C50AE4C23D21C8ABD82FA1C582B6A /* KKAlipayHelper.h in Headers */,
+				B18409B5DD7DFBB05EB98C86ED9A0BD1 /* KKAlipayItem.h in Headers */,
+				410D54AF745D47B23C5C62596E22BA00 /* KKAlipayManager.h in Headers */,
+				D5225D7B2714B6458E8EA346E7B12696 /* KKRSASigHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1445,19 +1471,19 @@
 			productReference = 7E5B426367581E41D35247C696BFA6C4 /* Masonry.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		69A364BD2D5F412442F285BC1D2F16C1 /* KKAlipayHelper */ = {
+		8A27CCE4A8B758425CD324F7B9756CD0 /* KKAlipayHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36A874C2BB472B91DF0ECAADE6074AEE /* Build configuration list for PBXNativeTarget "KKAlipayHelper" */;
+			buildConfigurationList = F6CC29E780349AEFA5AEF3C86FBB5FA5 /* Build configuration list for PBXNativeTarget "KKAlipayHelper" */;
 			buildPhases = (
-				57AAD6D5D5D13B45FBBCE8672F1158E1 /* Headers */,
-				5B641B4AF9D3448FFD71F81FD4CD034D /* Sources */,
-				EFDB12EC5EB041D24DD33F200A8DE5E4 /* Frameworks */,
-				25AA8E2EA6C5AD6CC5F023D771E6EFFE /* Resources */,
+				113F05E9BFE3D6F70ACABB58501F07A9 /* Headers */,
+				D303C60D9BA8A8CC53BFEA7C1473B10F /* Sources */,
+				43637C190DF077B788D3A32693A70C8B /* Frameworks */,
+				70889E419E9264F9E50B385EE888B0E4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3CDF84FE90FC74B3B6B94B024938FDC6 /* PBXTargetDependency */,
+				C249270A611BB70EDCD278C0A2399B00 /* PBXTargetDependency */,
 			);
 			name = KKAlipayHelper;
 			productName = KKAlipayHelper;
@@ -1547,7 +1573,7 @@
 			targets = (
 				BF160BF4E9F6EE312A9C8967B5A3C071 /* AFNetworking */,
 				1DAACFD3C7DBAFD79F0BC194768C9424 /* AlipaySDK-iOS */,
-				69A364BD2D5F412442F285BC1D2F16C1 /* KKAlipayHelper */,
+				8A27CCE4A8B758425CD324F7B9756CD0 /* KKAlipayHelper */,
 				64908377FC47CBE2E0EA0FA3CC30D3C1 /* Masonry */,
 				8FDF6E183D4B8A2B13D7E37BA90EF619 /* Pods-KKAlipayHelper_Example */,
 				CCA1B5E2E648A655D59F5E069849381C /* Pods-KKAlipayHelper_Tests */,
@@ -1557,13 +1583,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		25AA8E2EA6C5AD6CC5F023D771E6EFFE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		284809927B8979C5E31D601F4CE31172 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1572,6 +1591,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		697FF794DE01B53DA147E067C6FBCB83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70889E419E9264F9E50B385EE888B0E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1640,15 +1666,6 @@
 				C765036216E00FABFB77C285DF54B43C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				C6E6D90B104B4DEB6B78BB0995A54426 /* View+MASAdditions.m in Sources */,
 				4193ED1E70EA36BDB91D74ED490C02CB /* ViewController+MASAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B641B4AF9D3448FFD71F81FD4CD034D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				668A70D8982A4B94C4FB5284E8D5ACEA /* KKAlipayHelper-dummy.m in Sources */,
-				F765DEA8E2BA16370197CA0885D17D1A /* KKAlipayManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1749,6 +1766,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D303C60D9BA8A8CC53BFEA7C1473B10F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				569F2A252A3773957E73BFF79C2EB680 /* KKAlipayHelper-dummy.m in Sources */,
+				9DE76AEF0EAA54D54823CCA01E1FEF91 /* KKAlipayItem.m in Sources */,
+				D99277E4DA049E5DB97E80A53FB23403 /* KKAlipayManager.m in Sources */,
+				1B1D86C6C1AAC128320571951494308F /* KKRSASigHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E129D0AC5650B337EEB519BBC7F270DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1784,16 +1812,10 @@
 			target = 1DAACFD3C7DBAFD79F0BC194768C9424 /* AlipaySDK-iOS */;
 			targetProxy = F8B37A03695EDF670D94AC8B9EC7E559 /* PBXContainerItemProxy */;
 		};
-		3CDF84FE90FC74B3B6B94B024938FDC6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "AlipaySDK-iOS";
-			target = 1DAACFD3C7DBAFD79F0BC194768C9424 /* AlipaySDK-iOS */;
-			targetProxy = D2044A434DB3EE9D9F8CF1DFD9EF7BC5 /* PBXContainerItemProxy */;
-		};
 		3FD14941BA79095ECC16F7AA49138FDC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KKAlipayHelper;
-			target = 69A364BD2D5F412442F285BC1D2F16C1 /* KKAlipayHelper */;
+			target = 8A27CCE4A8B758425CD324F7B9756CD0 /* KKAlipayHelper */;
 			targetProxy = 5D3907DABF03A9EBD6D5493190041E9E /* PBXContainerItemProxy */;
 		};
 		9B30E5FA8BEB87ACF91881FC3F8775AD /* PBXTargetDependency */ = {
@@ -1801,6 +1823,12 @@
 			name = YYKit;
 			target = 6097372072867934CB365D05390DCF22 /* YYKit */;
 			targetProxy = 476EE10BC5B8D045CDABC7BBFE71A8DB /* PBXContainerItemProxy */;
+		};
+		C249270A611BB70EDCD278C0A2399B00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AlipaySDK-iOS";
+			target = 1DAACFD3C7DBAFD79F0BC194768C9424 /* AlipaySDK-iOS */;
+			targetProxy = 2E3E770C304F0262ADE194D3BC433BC4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2007,9 +2035,9 @@
 			};
 			name = Debug;
 		};
-		7E29E3A8D6BC99525ECA7E664D2F0389 /* Release */ = {
+		8017DA39227CBF8FBB81CE880F2AD5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D47552DFBE30D88E1F079294D394D13F /* KKAlipayHelper.xcconfig */;
+			baseConfigurationReference = 39675F7439C39312737150C2A824B084 /* KKAlipayHelper.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2033,11 +2061,10 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		81C3661637C0DD5113BE8CE898BFEC96 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2197,9 +2224,9 @@
 			};
 			name = Release;
 		};
-		BB1D0C498EE2168832BBAB077706ED33 /* Debug */ = {
+		B5CA73335FB0EA85A657134804CB21CC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D47552DFBE30D88E1F079294D394D13F /* KKAlipayHelper.xcconfig */;
+			baseConfigurationReference = 39675F7439C39312737150C2A824B084 /* KKAlipayHelper.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2223,10 +2250,11 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		D524639CD3287CCE1095A9D7E1F990A7 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2348,15 +2376,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36A874C2BB472B91DF0ECAADE6074AEE /* Build configuration list for PBXNativeTarget "KKAlipayHelper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BB1D0C498EE2168832BBAB077706ED33 /* Debug */,
-				7E29E3A8D6BC99525ECA7E664D2F0389 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2407,6 +2426,15 @@
 			buildConfigurations = (
 				780D93BAD2D90E4FF77940FEC2429A4C /* Debug */,
 				23D6FDACC3D00D73F29B60C3C19DDFC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6CC29E780349AEFA5AEF3C86FBB5FA5 /* Build configuration list for PBXNativeTarget "KKAlipayHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8017DA39227CBF8FBB81CE880F2AD5E0 /* Debug */,
+				B5CA73335FB0EA85A657134804CB21CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

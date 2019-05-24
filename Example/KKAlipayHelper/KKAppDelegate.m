@@ -9,6 +9,12 @@
 #import "KKAppDelegate.h"
 #import <KKAlipayHelper/KKAlipayHelper.h>
 
+#define KK_APPID    @""
+#define KK_WANGGUAN @""
+
+
+
+
 @implementation KKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

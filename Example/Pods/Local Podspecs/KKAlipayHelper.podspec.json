@@ -22,9 +22,14 @@
   "public_header_files": "KKAlipayHelper/Classes/**/*.h",
   "requires_arc": true,
   "static_framework": true,
+  "vendored_libraries": "KKAlipayHelper/Classes/**/*.a",
   "frameworks": [
     "UIKit",
     "Foundation"
+  ],
+  "libraries": [
+    "z",
+    "c++"
   ],
   "dependencies": {
     "AlipaySDK-iOS": [
