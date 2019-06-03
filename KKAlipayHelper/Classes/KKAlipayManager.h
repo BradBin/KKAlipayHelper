@@ -49,17 +49,19 @@ typedef void(^ _Nullable KKAlipayBlock)(KKAlipayResultStatus status,NSDictionary
  */
 - (void)setDebugEnabled:(BOOL)enable;
 
+
 /**
-  拉起支付宝支付
+ 拉起支付宝支付
  备注:支付成功则去后台查询支付结果,再去展示给用户实际支付结果页面,一定
  不能以客户端返回作为用户支付结果
 
- @param order 支付签名,此签名由服务器签名订单后生成
+ @param orderRequest 支付签名请求,此签名由服务器签名订单后生成
  @param scheme url scheme
  @param success 成功h回调block
  @param failure 失败回调block
  */
-- (void)payOrder:(NSString *)order scheme:(NSString *)scheme success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure;
+- (void)payOrderRequest:(nonnull KKAlipayRequest *)orderRequest scheme:(NSString *)scheme success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure;
+
 
 /**
  处理客户端回调

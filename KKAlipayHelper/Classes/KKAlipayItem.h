@@ -21,6 +21,16 @@ typedef NS_ENUM(NSUInteger,KKSignType) {
     KKSignTypeRSA
 };
 
+
+/**
+ 参数编码格式
+
+ - KKCharsetTypeUTF_8: utf-8
+ */
+typedef NS_ENUM(NSUInteger,KKCharsetType) {
+    KKCharsetTypeUTF_8 = 0,
+};
+
 /**
  授权类型
 
@@ -31,7 +41,6 @@ typedef NS_ENUM(NSInteger,KKAuthType) {
     KKAuthTypeLOGIN = 0,
     KKAuthTypeAUTHACCOUNT
 };
-
 
 /**
  业务参数类
@@ -85,6 +94,11 @@ typedef NS_ENUM(NSInteger,KKAuthType) {
 
 #pragma mark -
 #pragma mark - 订单信息类型
+
+/**
+ 订单信息类型模型
+ 备注:支付款信息的详情
+ */
 @interface KKAlipayRequest : NSObject
 
 /**

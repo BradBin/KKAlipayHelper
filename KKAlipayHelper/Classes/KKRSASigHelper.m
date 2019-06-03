@@ -28,13 +28,10 @@
     _privateKey = [privateKey copy];
 }
 
-
-
 -(NSString *)kk_signWithString:(NSString *)string RSA2Enabled:(BOOL)enabled{
     NSString *signString = nil;
     NSString *path       = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString *signPath   = [path stringByAppendingPathComponent:@"AlixPay-RSAPrivateKey"];
-    
     
 }
 

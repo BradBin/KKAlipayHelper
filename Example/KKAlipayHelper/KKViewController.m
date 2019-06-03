@@ -51,10 +51,20 @@
 
 - (void)kk_aliPayEvent:(UIButton *)sender{
     
-    [KKAlipayManager.shared payOrder:@"" scheme:@"" success:^(KKAlipayResultStatus status, NSDictionary * _Nonnull dict) {
-        
+    //2016093000628086
+    
+    KKAlipayRequest *request = KKAlipayRequest.alloc.init;
+    request.appId     = @"2016093000628086";
+    request.method    = @"alipay.trade.app.pay";
+    request.charset   = @"utf-8";
+    request.timestamp = [[NSDate date] stringWithFormat:@"yyyy-MM-dd HH:mm:ss"];
+    request.version   = @"1.0";
+    request.signType  = KKSignTypeRSA;
+    
+    [KKAlipayManager.shared payOrderRequest:request scheme:@"alisdkdemo" success:^(KKAlipayResultStatus status, NSDictionary * _Nonnull dict) {
+        NSLog(@"success :  %ld",status);
     } failure:^(KKAlipayResultStatus status, NSDictionary * _Nonnull dict) {
-        
+        NSLog(@"failure :  %ld",status);
     }];
 }
 

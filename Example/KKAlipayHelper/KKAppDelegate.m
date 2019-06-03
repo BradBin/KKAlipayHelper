@@ -9,7 +9,7 @@
 #import "KKAppDelegate.h"
 #import <KKAlipayHelper/KKAlipayHelper.h>
 
-#define KK_APPID    @""
+#define KK_APPID    @"2016093000628086"
 #define KK_WANGGUAN @""
 
 
