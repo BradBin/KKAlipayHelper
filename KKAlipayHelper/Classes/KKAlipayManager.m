@@ -56,6 +56,20 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
     _isDebug = enable;
 }
 
+- (NSString *)createRandomTradeNumber{
+    NSUInteger count = 15;
+    NSString *sourceString = @"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    NSMutableString *resultString = [[NSMutableString alloc] init];
+    srand((unsigned)time(0));
+    for (NSUInteger i = 0; i < count; i++){
+        NSUInteger index = rand() % [sourceString length];
+        NSString *string = [sourceString substringWithRange:NSMakeRange(index, 1)];
+        [resultString appendString:string];
+    }
+    return resultString;
+}
+
+
 -(void)payOrderRequest:(KKAlipayRequest *)orderRequest scheme:(NSString *)scheme success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure{
     if (orderRequest == nil) {
 #ifdef DEBUG

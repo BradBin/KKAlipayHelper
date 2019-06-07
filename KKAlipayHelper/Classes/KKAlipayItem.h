@@ -153,7 +153,7 @@ typedef NS_ENUM(NSInteger,KKAuthType) {
 /**
  Required 业务请求数据
  */
-@property (nonatomic,  copy) KKAlipayOrder *biz_content;
+@property (nonatomic,strong) KKAlipayOrder *biz_content;
 
 /**
  Required 商户签名算法类型

@@ -18,6 +18,7 @@ PODS:
   - KKAlipayHelper (1.0.0):
     - AlipaySDK-iOS (~> 15.5.9)
   - Masonry (1.1.0)
+  - SVProgressHUD (2.2.5)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -26,6 +27,7 @@ DEPENDENCIES:
   - AFNetworking
   - KKAlipayHelper (from `../`)
   - Masonry
+  - SVProgressHUD
   - YYKit
 
 SPEC REPOS:
@@ -33,6 +35,7 @@ SPEC REPOS:
     - AFNetworking
     - AlipaySDK-iOS
     - Masonry
+    - SVProgressHUD
     - YYKit
 
 EXTERNAL SOURCES:
@@ -44,8 +47,9 @@ SPEC CHECKSUMS:
   AlipaySDK-iOS: 1c5283b30977a24acecc0114662697f7dc78f618
   KKAlipayHelper: e2b3417575bf04770a742d7cc20522c6731c6f32
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 3d8e8bac0f1f99ecb1fa7a47a50d768652e7efe7
+PODFILE CHECKSUM: fb471a26eec7920f6b820815ee19241f603a1165
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.1

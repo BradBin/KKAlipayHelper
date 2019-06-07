@@ -49,6 +49,12 @@ typedef void(^ _Nullable KKAlipayBlock)(KKAlipayResultStatus status,NSDictionary
  */
 - (void)setDebugEnabled:(BOOL)enable;
 
+/**
+ 生成15位随机订单编号
+
+ @return 随机订单编号
+ */
+- (NSString *)createRandomTradeNumber;
 
 /**
  拉起支付宝支付

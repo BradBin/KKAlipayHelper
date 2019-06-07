@@ -9,6 +9,7 @@
 #import "KKViewController.h"
 #import <YYKit/YYKit.h>
 #import <Masonry/Masonry.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 #import <KKAlipayHelper/KKAlipayHelper.h>
 
 @interface KKViewController ()
@@ -53,18 +54,28 @@
     
     //2016093000628086
     
+    KKAlipayOrder *order = KKAlipayOrder.new;
+    order.totalAmount    = [NSString stringWithFormat:@"%.2f",0.01];
+    order.tradeNum       = [KKAlipayManager.shared createRandomTradeNumber];
+    order.timeoutExpress = @"2m";
+    order.productDesc    = @"测试";
+    
+    
     KKAlipayRequest *request = KKAlipayRequest.alloc.init;
-    request.appId     = @"2016093000628086";
-    request.method    = @"alipay.trade.app.pay";
-    request.charset   = @"utf-8";
-    request.timestamp = [[NSDate date] stringWithFormat:@"yyyy-MM-dd HH:mm:ss"];
-    request.version   = @"1.0";
-    request.signType  = KKSignTypeRSA;
+    request.appId       = @"2016093000628086";
+    request.method      = @"alipay.trade.app.pay";
+    request.charset     = @"utf-8";
+    request.timestamp   = [[NSDate date] stringWithFormat:@"yyyy-MM-dd HH:mm:ss"];
+    request.version     = @"1.0";
+    request.signType    = KKSignTypeRSA;
+    request.biz_content = order;
     
     [KKAlipayManager.shared payOrderRequest:request scheme:@"alisdkdemo" success:^(KKAlipayResultStatus status, NSDictionary * _Nonnull dict) {
         NSLog(@"success :  %ld",status);
     } failure:^(KKAlipayResultStatus status, NSDictionary * _Nonnull dict) {
         NSLog(@"failure :  %ld",status);
+        
+        [SVProgressHUD showErrorWithStatus:@"支付宝支付失败!"];
     }];
 }
 

@@ -9,6 +9,7 @@ target 'KKAlipayHelper_Example' do
   pod 'YYKit'
   pod 'Masonry'
   pod 'AFNetworking'
+  pod 'SVProgressHUD'
 
   target 'KKAlipayHelper_Tests' do
     inherit! :search_paths

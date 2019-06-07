@@ -8,6 +8,7 @@
 
 #import "KKAppDelegate.h"
 #import <KKAlipayHelper/KKAlipayHelper.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 
 #define KK_APPID    @"2016093000628086"
 #define KK_WANGGUAN @""
@@ -20,9 +21,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSLog(@"%@",[KKAlipayManager.shared isAlipayAppInstalled] ? @"安装了支付宝":@"没有安装了支付宝");
+    [self kk_setupSVP];
     // Override point for customization after application launch.
     return YES;
 }
+
+- (void)kk_setupSVP{
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD setCornerRadius:3.0];
+    [SVProgressHUD setFont:[UIFont systemFontOfSize:14]];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
