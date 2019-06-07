@@ -13,7 +13,7 @@
 #import "KKAlipayHelper.h"
 #import "KKAlipayItem.h"
 #import "KKAlipayManager.h"
-#import "KKRSASigHelper.h"
+
 
 FOUNDATION_EXPORT double KKAlipayHelperVersionNumber;
 FOUNDATION_EXPORT const unsigned char KKAlipayHelperVersionString[];
