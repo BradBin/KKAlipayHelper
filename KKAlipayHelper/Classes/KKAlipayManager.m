@@ -148,6 +148,25 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
     return true;
 }
 
+
+-(BOOL)handleOpenURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    if ([url.host isEqualToString:kkSafepay]) {
+        // 支付跳转支付宝钱包进行支付，处理支付结果
+        [AlipaySDK.defaultService processAuthResult:url standbyCallback:^(NSDictionary *result) {
+            
+        }];
+        
+        // 授权跳转支付宝钱包进行支付，处理支付结果
+        [AlipaySDK.defaultService processAuth_V2Result:url standbyCallback:^(NSDictionary *result) {
+            
+        }];
+    }
+    return true;
+}
+
+
+
+
 #pragma mark -
 - (NSString *) kk_URLEncodedString:(NSString *)urlString{
    urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet];
