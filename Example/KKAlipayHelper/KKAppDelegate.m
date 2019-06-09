@@ -13,8 +13,6 @@
 #define KK_WANGGUAN @""
 
 
-
-
 @implementation KKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

@@ -82,6 +82,8 @@
      
      ***/
     
+    NSString *privateKey = @"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhbRHPSolzKrXAgZETbC6xnu2Br5FsWE3i7G3IiDcOhvKHUk+e4lQz29rur3BXcfync48PobbGK9kUv9y8w97PLcrYzm90oS4j7IpUCowlC9WEMUI23Z283ZJ3/OO2ywZindlAHJMSju/mBpL8/8QXeOXRF6DoWnwSA9N+wmUCr8K6Ui9q+hnenMGP+fWN5NbDLLmC5aQYxS7snduvRLCwKO/HLkK7V2wBQsrDgpu7YqVF8ZZU6leJ75mchg3V7vXFHMsno8uZHXkwIFt9qkLZetbik8V7Cfyn1sCtOW57BG7p/PuGX38/CV8Ii3zgqoBphrwDIZ9LnfvAKMk6oOWIQIDAQAB";
+    
     KKAlipayOrder *order = KKAlipayOrder.new;
     order.totalAmount    = [NSString stringWithFormat:@"%.2f",0.01];
     order.tradeNum       = [KKAlipayManager.shared createRandomTradeNumber];
@@ -98,6 +100,7 @@
     request.signType    = KKSignTypeRSA;
     request.biz_content = order;
     
+    [KKAlipayManager.shared setPrivateKey:privateKey rsa2:false];
     [KKAlipayManager.shared payOrderRequest:request scheme:@"alisdkdemo" success:^(KKAlipayResultStatus status, NSDictionary * _Nonnull dict) {
         NSLog(@"success :  %ld",status);
     } failure:^(KKAlipayResultStatus status, NSDictionary * _Nonnull dict) {

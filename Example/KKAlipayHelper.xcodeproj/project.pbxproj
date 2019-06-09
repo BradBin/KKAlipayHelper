@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0A0C97E322AC0261006CA333 /* KKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C97E222AC0261006CA333 /* KKWebViewController.m */; };
 		0A0C97E622AC0C82006CA333 /* KKWebApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C97E522AC0C82006CA333 /* KKWebApi.m */; };
+		0A0C97EF22AC24CC006CA333 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C97EC22AC24CC006CA333 /* GTMBase64.m */; };
+		0A0C97F022AC24CC006CA333 /* KKCryptoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C97EE22AC24CC006CA333 /* KKCryptoHelper.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -45,6 +47,11 @@
 		0A0C97E422AC0C82006CA333 /* KKWebApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKWebApi.h; sourceTree = "<group>"; };
 		0A0C97E522AC0C82006CA333 /* KKWebApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKWebApi.m; sourceTree = "<group>"; };
 		0A0C97E722AC0CA9006CA333 /* KKWebApiProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKWebApiProtocol.h; sourceTree = "<group>"; };
+		0A0C97EA22AC24CC006CA333 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		0A0C97EB22AC24CC006CA333 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		0A0C97EC22AC24CC006CA333 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		0A0C97ED22AC24CC006CA333 /* KKCryptoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCryptoHelper.h; sourceTree = "<group>"; };
+		0A0C97EE22AC24CC006CA333 /* KKCryptoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCryptoHelper.m; sourceTree = "<group>"; };
 		1404E099A849E2081C5282AE /* Pods-KKAlipayHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKAlipayHelper_Example.release.xcconfig"; path = "Target Support Files/Pods-KKAlipayHelper_Example/Pods-KKAlipayHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		39AFC95CD74C6EAAD141CC04 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5E80EAF5777EC4A579E83388 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -103,6 +110,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0C97E822AC24CC006CA333 /* KKCryptoHelper */ = {
+			isa = PBXGroup;
+			children = (
+				0A0C97E922AC24CC006CA333 /* GTMBase64 */,
+				0A0C97ED22AC24CC006CA333 /* KKCryptoHelper.h */,
+				0A0C97EE22AC24CC006CA333 /* KKCryptoHelper.m */,
+			);
+			path = KKCryptoHelper;
+			sourceTree = "<group>";
+		};
+		0A0C97E922AC24CC006CA333 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				0A0C97EA22AC24CC006CA333 /* GTMBase64.h */,
+				0A0C97EB22AC24CC006CA333 /* GTMDefines.h */,
+				0A0C97EC22AC24CC006CA333 /* GTMBase64.m */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
 		1441F6441FF2D07EE512827A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +178,7 @@
 		6003F593195388D20070C39A /* Example for KKAlipayHelper */ = {
 			isa = PBXGroup;
 			children = (
+				0A0C97E822AC24CC006CA333 /* KKCryptoHelper */,
 				6003F59C195388D20070C39A /* KKAppDelegate.h */,
 				6003F59D195388D20070C39A /* KKAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -411,6 +439,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* KKAppDelegate.m in Sources */,
+				0A0C97EF22AC24CC006CA333 /* GTMBase64.m in Sources */,
+				0A0C97F022AC24CC006CA333 /* KKCryptoHelper.m in Sources */,
 				0A0C97E622AC0C82006CA333 /* KKWebApi.m in Sources */,
 				0A0C97E322AC0261006CA333 /* KKWebViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* KKViewController.m in Sources */,

@@ -17,6 +17,17 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
  默认:fasle正式环境
  */
 @property (nonatomic,assign) BOOL isDebug;
+
+/**
+ 私钥
+ */
+@property(nonatomic, copy) NSString *privateKey;
+
+/**
+ 默认false:rsa 反之true:rsa2
+ */
+@property (nonatomic,assign) BOOL rsa2;
+
 /**
  支付成功回调block
  */
@@ -69,6 +80,10 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
     return resultString;
 }
 
+-(void)setPrivateKey:(NSString *)privateKey rsa2:(BOOL)rsa2{
+    _privateKey = [privateKey copy];
+    _rsa2       = rsa2;
+}
 
 -(void)payOrderRequest:(KKAlipayRequest *)orderRequest scheme:(NSString *)scheme success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure{
     if (orderRequest == nil) {
@@ -96,14 +111,24 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
 #ifdef DEBUG
     NSLog(@"orderString:%@  \n  encodeOrderString:%@",orderString,encodeOrderString);
 #endif
-    NSString *signedString = nil;
     self.success = success;
     self.failure = failure;
+    
+    
   
     //进行验签名
-    if ([self kk_isNotBlank:signedString]) {
+    if ([self kk_isNotBlank:self.privateKey]) {
+        
+        // NOTE: 获取私钥并将商户信息签名，外部商户的加签过程请务必放在服务端，防止公私钥数据泄露；
+        //       需要遵循RSA签名规范，并将签名字符串base64编码和UrlEncode
+        
+        //将签名成功字符串格式化为订单字符串,请严格按照该格式
+        
+        
+        __weak __typeof(self) weakSelf = self;
         [AlipaySDK.defaultService payOrder:orderString fromScheme:scheme callback:^(NSDictionary *resultDic) {
-            
+            __strong __typeof(weakSelf) strongSelf = weakSelf;
+            NSLog(@"-----%@",resultDic);
             
         }];
     }else{

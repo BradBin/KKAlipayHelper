@@ -57,6 +57,14 @@ typedef void(^ _Nullable KKAlipayBlock)(KKAlipayResultStatus status,NSDictionary
 - (NSString *)createRandomTradeNumber;
 
 /**
+ 应用私钥,私钥类型,默认rsa
+ 
+ @param privateKey 私钥
+ @param rsa2 私钥类型 默认false:rsa 反之true:rsa2
+ */
+- (void)setPrivateKey:(NSString *)privateKey rsa2:(BOOL)rsa2;
+
+/**
  拉起支付宝支付
  备注:支付成功则去后台查询支付结果,再去展示给用户实际支付结果页面,一定
  不能以客户端返回作为用户支付结果
