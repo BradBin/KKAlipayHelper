@@ -46,7 +46,7 @@
 		0EBF8C6B80B02F3959D2B863147FD4FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01816ECA8D172977C800F46A551EF204 /* SystemConfiguration.framework */; };
 		0FA67DBC6C1478A89129CFB24C67C7FC /* RACTargetQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE755DBD9FF9D4E8AD25C3EF68357EB /* RACTargetQueueScheduler.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0FCB9EB2B1204179B68DBFE6320C9E6C /* NSDate+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 906F71F56292667B5E37F13872AE107F /* NSDate+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10E0A5DEBB8B814832AEA3773E599E16 /* KKAlipayHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 23CD89F04132B80D8B650E9BF183CC39 /* KKAlipayHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10E0A5DEBB8B814832AEA3773E599E16 /* KKAlipayHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A69F2809287BAAB69318D3CAA22068 /* KKAlipayHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10E4AE75A7D9713CDA959598B89B540D /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ED56E1CBFFCF3A044A739B28016CF7C1 /* NSArray+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		11302B922513E65ABD53B20060AAF6C6 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5985CE4641470EEBDB76ED7B2238BB47 /* NSObject+YYModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		113055A08FCF57617C26C92BCFCE79DA /* NSObject+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 8233114F57CCC74BC13FB1192A23DD6C /* NSObject+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -123,7 +123,7 @@
 		38E45E6AEB688E201E07A3165D79F232 /* NSEnumerator+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 522F0B91E5FE3CCECE0590B11E598F7A /* NSEnumerator+RACSequenceAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		39A2B1E843EF2D371010B5778B10AB97 /* RACSignalSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 69B877C4B9184B73BA2D5A6F3661505C /* RACSignalSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		39E42B5AC2A36B55367DF1C7A68AF0C9 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 56256445E52132A2C96D414534BB258F /* AFURLResponseSerialization.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		39E8C847C63001196C63A1EF232C0078 /* KKAlipayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CA2EEACCF03ADCF05856DE17FE545CF1 /* KKAlipayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39E8C847C63001196C63A1EF232C0078 /* KKAlipayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C601EC0AF92D0B09D2093528A5B26730 /* KKAlipayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A29021F34F2F0871324309CC21F7A78 /* RACReturnSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DCF53B8FD04C00964AEB1791A455F3 /* RACReturnSignal.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3AD325365923672EB0B4C21645B52F20 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFAAF25F9D8F1CDF37EEEC4CB977F76 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3B158900963FC3873915D3E3C09DF802 /* NSObject+YYAddForKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FB52AFEDE8E2C036C364707E68083 /* NSObject+YYAddForKVO.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -140,7 +140,7 @@
 		4193ED1E70EA36BDB91D74ED490C02CB /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44852A1013A8C714837DC20C2E942C51 /* ViewController+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4227E577426876BAACD5AD1DC6D47B20 /* RACArraySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BCF9FEB8E6698EAC40C6D3AD4CF5E4 /* RACArraySequence.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		426AF4DEE1043507257EAD24BDF6F342 /* YYTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 473FEBF7031B630EF6334CADCB1AF117 /* YYTransaction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		42EB8A1E24DD077C1A8D55D483F14DB2 /* KKAlipayHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D254F7D5EA2CB97A39E73902C665A176 /* KKAlipayHelper-dummy.m */; };
+		42EB8A1E24DD077C1A8D55D483F14DB2 /* KKAlipayHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC548853D8A45079772AC259C5B4DC3 /* KKAlipayHelper-dummy.m */; };
 		436A572CFC97C21056522965A26A09E0 /* NSObject+YYAddForARC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5687CA47A9203397F35DB7F216A543A6 /* NSObject+YYAddForARC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43B5E0DDFBAC90A1A771D2A9B5A55172 /* NSObject+RACDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 9892D9D1E0514795109BAC948335D9CA /* NSObject+RACDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43D771C49CE2295AB6B40329B58F0451 /* YYTextSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 06BB60E2FF08C20324EC13E40C53F9FF /* YYTextSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -181,7 +181,7 @@
 		5692EDD9D503694992BA0195CFF450E3 /* YYWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3B1469523F20AA42A016CBA7D653EA /* YYWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57CE14920D5A33546D5ABEB1509457FE /* RACSubscriptionScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 077D42A014C81853DDB782ADC25EDC3D /* RACSubscriptionScheduler.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		57FC6DFCB139CD4338F2A9AD472B1FBB /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD60CF6A6921E546C1F51AFD031339FE /* AssetsLibrary.framework */; };
-		5832E5CC8F0144264762C0711CF4C5B8 /* KKAlipayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B62CBBA972A5748D8B888F5DB4795F /* KKAlipayItem.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5832E5CC8F0144264762C0711CF4C5B8 /* KKAlipayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB2AD0271C9FCFD8A91708ACB6DA64E /* KKAlipayItem.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		58CAA80DA2CD83F9A7FD14221E8941F0 /* RACEmptySignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DDDE9177936E3A096F4672A540AE9 /* RACEmptySignal.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		58E205F408FA98EF75E8E64215F45531 /* YYImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CA2622BB732C4ED380DB22DED76C7CEA /* YYImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		590E2103068334DF7E18ED84917360C0 /* UIButton+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = AA70CD5AB401B57670F55ED532AF97A9 /* UIButton+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -346,7 +346,7 @@
 		AFD2EE4C8A6CCAD77795C46F774009C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E5B1C952D1B86ACD8AD6CB20B6CEF1 /* UIKit.framework */; };
 		B0787EC6BC4F958C0B96786E83825E6E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF667BEB5F2C7CD211CAA7747BFB6430 /* QuartzCore.framework */; };
 		B0FE1AC303CE8CB9F7C029AD1D3D1E12 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E078A5D061E4DA2BC76E420789D581A0 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B136950254654360BF5DA4F882FDE6F2 /* KKAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE723B4B7E27878C2FBB158875406DF /* KKAlipayManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B136950254654360BF5DA4F882FDE6F2 /* KKAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 365E7BF261EC8C14592A7204B26B7277 /* KKAlipayManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B24F0979FBAD68FB8D14842C9259846C /* UISlider+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = D67880C23F59E3E456C0589EC6212B26 /* UISlider+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3383A6F156658722441B33DDA91AEEE /* YYTextRubyAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D8F727766248108B4972424CD335568 /* YYTextRubyAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B37D633C55E9E6B7CB48828EEA3A132F /* RACDynamicSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A205399D8ACE01E7477ABF9B0E8255C /* RACDynamicSignal.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -366,7 +366,7 @@
 		BB00337B07C148E33DED6CEEDBF9A488 /* YYWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A2C171DD7A0D2CBF5D50C25AD6809A /* YYWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB1E6C5C24ECC08355FCA6EA95E7A3CA /* NSString+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 979383A5C9DA3CB49A7048E481A9DB1D /* NSString+RACSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BC6C589C402FDF3DBC71B04308851FBB /* RACStream.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF79E48F4A38293191047E988B9B96C /* RACStream.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BCA2021389AD43EB90A6D4345023931E /* KKAlipayHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1101067224BFFA6F2E005CB167E58789 /* KKAlipayHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCA2021389AD43EB90A6D4345023931E /* KKAlipayHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C0D33F918A3EE3D8824B038B7A7C31 /* KKAlipayHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD5C1CB06A8233CCE002E318554905D8 /* RACSerialDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = C18E9A5EC46E2C2F30F1C99F3D151D1B /* RACSerialDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE546A8EEABB8CEE62658C01FD63885C /* UIBarButtonItem+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = B1B7A41ACCD8A4A2122B16EED9201412 /* UIBarButtonItem+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEBAF969D042262C0B99BBF5D9F736D0 /* YYGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BBD5D77CFDBAA8BCDF1C33D11F08239 /* YYGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -452,7 +452,7 @@
 		E5B817ACAFC2362BD3D5646AF7C82083 /* YYMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9972B9E9FAD472D3C9DBF7017AF13AA8 /* YYMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5EE75C4AC844B9A56638CDBD6ACEF4F /* Pods-KKAlipayHelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DEEB28F79ABA49E356E73DD0B8D9F7E /* Pods-KKAlipayHelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6937F73D5B04BE67153D3C3AACD8922 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 78350A073AB4066E9746DCFE01C82D70 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6BC027C431505AC223EAD0739D9D2BD /* KKAlipayItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6828C21B8C444B0540CBE66926597246 /* KKAlipayItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6BC027C431505AC223EAD0739D9D2BD /* KKAlipayItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C818CAA7FE882863DC006550046D2B3D /* KKAlipayItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7805B558ACD291DAE469478DA1D29E2 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5D9A5D4ADBC026D403FE54EBCB298F /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7EC79238E2A9E6ABCD21BE49044C630 /* Pods-KKAlipayHelper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1978DC52372BD43E33A1B6386FEC8E53 /* Pods-KKAlipayHelper_Tests-dummy.m */; };
 		E85D6B39CDB0B1775A47D64FD872DF95 /* RACBlockTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = D4187935E73A452723E5534B7C51BAFC /* RACBlockTrampoline.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -594,7 +594,6 @@
 		05AABBEB8A031EF5CEB8BBAF401352B4 /* YYKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYKit.xcconfig; sourceTree = "<group>"; };
 		05E59A09DCD0911E5C18A599791299A2 /* YYThreadSafeDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYThreadSafeDictionary.m; path = YYKit/Utility/YYThreadSafeDictionary.m; sourceTree = "<group>"; };
 		06516834EBFAEA4C15FA603BBB4B83EC /* DWKWebView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWKWebView.m; path = dsbridge/DWKWebView.m; sourceTree = "<group>"; };
-		06526A717C39B5A202A3F8AA500C6F12 /* KKAlipayHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KKAlipayHelper.xcconfig; sourceTree = "<group>"; };
 		06615C644FE87D239A7342C7F8DF3844 /* ReactiveObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReactiveObjC.modulemap; sourceTree = "<group>"; };
 		066BD14F79AA34E64273143DF8DC5A72 /* RACKVOProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACKVOProxy.h; path = ReactiveObjC/RACKVOProxy.h; sourceTree = "<group>"; };
 		06BB60E2FF08C20324EC13E40C53F9FF /* YYTextSelectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextSelectionView.h; path = YYKit/Text/Component/YYTextSelectionView.h; sourceTree = "<group>"; };
@@ -619,9 +618,9 @@
 		1050E943A8A8DE65040F7C0ABB3CDA5C /* InternalApis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InternalApis.h; path = dsbridge/InternalApis.h; sourceTree = "<group>"; };
 		10989526D005D6167C74ACAC114B0E02 /* NSOrderedSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSOrderedSet+RACSequenceAdditions.h"; path = "ReactiveObjC/NSOrderedSet+RACSequenceAdditions.h"; sourceTree = "<group>"; };
 		10ACF2BD0C65779C98F15D0912402A99 /* RACStream+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACStream+Private.h"; path = "ReactiveObjC/RACStream+Private.h"; sourceTree = "<group>"; };
-		1101067224BFFA6F2E005CB167E58789 /* KKAlipayHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKAlipayHelper-umbrella.h"; sourceTree = "<group>"; };
 		114F835F41A55A42932E9948643D4C25 /* dsbridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsbridge.h; path = dsbridge/dsbridge.h; sourceTree = "<group>"; };
 		1391F88C77CF7DE962BEE03B72E7E804 /* RACDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDelegateProxy.m; path = ReactiveObjC/RACDelegateProxy.m; sourceTree = "<group>"; };
+		14989EF2C9D05AB87008B3C15C30BAE0 /* KKAlipayHelper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KKAlipayHelper-Info.plist"; sourceTree = "<group>"; };
 		14FE49660B28BF083F0E05BCA7D0176A /* NSNumber+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+YYAdd.m"; path = "YYKit/Base/Foundation/NSNumber+YYAdd.m"; sourceTree = "<group>"; };
 		159974131E7CB4673A1E91D348FA4308 /* UIGestureRecognizer+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+RACSignalSupport.m"; path = "ReactiveObjC/UIGestureRecognizer+RACSignalSupport.m"; sourceTree = "<group>"; };
 		165183E63DCDCEFE658772D97CEC7979 /* YYKitMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKitMacro.h; path = YYKit/Base/YYKitMacro.h; sourceTree = "<group>"; };
@@ -634,7 +633,6 @@
 		1A7C3DD3D753AFD8645F42A797AD9D3E /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		1ABCB3ABC5864814E76100B3C94C5C23 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		1B94AA88DF9286F47203BBD8A0A0FAF7 /* YYWebImageOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYWebImageOperation.m; path = YYKit/Image/YYWebImageOperation.m; sourceTree = "<group>"; };
-		1D83098A2291C3FB04FFE7E624010C4E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		1D8F727766248108B4972424CD335568 /* YYTextRubyAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextRubyAnnotation.h; path = YYKit/Text/String/YYTextRubyAnnotation.h; sourceTree = "<group>"; };
 		1E17D40B85C8C45D4DB4A781B24D04FA /* RACSubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubject.m; path = ReactiveObjC/RACSubject.m; sourceTree = "<group>"; };
 		1EFF3D935B2BDD3A9B3165FDA41C1838 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
@@ -648,7 +646,6 @@
 		22B2DADC37E40BDED10000C0EC72BBA3 /* NSTimer+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+YYAdd.h"; path = "YYKit/Base/Foundation/NSTimer+YYAdd.h"; sourceTree = "<group>"; };
 		22D4CF7B8EB8F83D0B6AD3BD93701BC2 /* YYCGUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYCGUtilities.m; path = YYKit/Base/Quartz/YYCGUtilities.m; sourceTree = "<group>"; };
 		23902515AEFC08D6FA037CCD130BFCB2 /* Pods-KKAlipayHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKAlipayHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		23CD89F04132B80D8B650E9BF183CC39 /* KKAlipayHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAlipayHelper.h; path = KKAlipayHelper/Classes/KKAlipayHelper.h; sourceTree = "<group>"; };
 		2546E4E85B0201043C6B66848BE45073 /* NSDictionary+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+YYAdd.m"; path = "YYKit/Base/Foundation/NSDictionary+YYAdd.m"; sourceTree = "<group>"; };
 		2555E3A892F3CB5CBA937813DF8F0028 /* NSArray+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+RACSequenceAdditions.m"; path = "ReactiveObjC/NSArray+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		259B0115CEC27B269FBF3A756C1DFC38 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
@@ -674,6 +671,7 @@
 		2E25718ECC4E2428980B00DCDB005A31 /* NSData+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+RACSupport.m"; path = "ReactiveObjC/NSData+RACSupport.m"; sourceTree = "<group>"; };
 		2E3DCB70618C9DA5E4BF43E9AF79DE5D /* YYKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYKit-dummy.m"; sourceTree = "<group>"; };
 		2E475A589D4CF45ADB835AD6B3E0DFFF /* MKAnnotationView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKAnnotationView+RACSignalSupport.h"; path = "ReactiveObjC/MKAnnotationView+RACSignalSupport.h"; sourceTree = "<group>"; };
+		2E51B841ED4D99D419955323EBBCAFEE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		2E6660082EBC48D5605E8B209533B3C4 /* UIDatePicker+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDatePicker+RACSignalSupport.h"; path = "ReactiveObjC/UIDatePicker+RACSignalSupport.h"; sourceTree = "<group>"; };
 		2E6E1476D24F3FFCB2831660E194AA41 /* RACSerialDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSerialDisposable.m; path = ReactiveObjC/RACSerialDisposable.m; sourceTree = "<group>"; };
 		2E73BC67ECB3793D72D74C0F78378035 /* UIPasteboard+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPasteboard+YYText.h"; path = "YYKit/Text/String/UIPasteboard+YYText.h"; sourceTree = "<group>"; };
@@ -694,11 +692,12 @@
 		339522F8D83C3747DF4007DF27B582E8 /* YYFrameImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYFrameImage.h; path = YYKit/Image/YYFrameImage.h; sourceTree = "<group>"; };
 		34BD554EBFD852283E5B90497279DB69 /* JSBUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSBUtil.h; path = dsbridge/JSBUtil.h; sourceTree = "<group>"; };
 		34C8F68E52E88127EC24C3087A4901F9 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
-		34F7C62CB8E1693226215156AE493079 /* KKAlipayHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KKAlipayHelper.modulemap; sourceTree = "<group>"; };
 		35598F3DC3788ECA381663931F489E64 /* RACUnarySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACUnarySequence.h; path = ReactiveObjC/RACUnarySequence.h; sourceTree = "<group>"; };
 		355A7C0B7031BD6B7D0B4261E8068B14 /* NSArray+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+YYAdd.h"; path = "YYKit/Base/Foundation/NSArray+YYAdd.h"; sourceTree = "<group>"; };
 		356C3D2888BFECF7399F48D37F951538 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		361D906BBE08BC2829172F8E4B382E80 /* RACTestScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTestScheduler.h; path = ReactiveObjC/RACTestScheduler.h; sourceTree = "<group>"; };
+		365E7BF261EC8C14592A7204B26B7277 /* KKAlipayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAlipayManager.m; path = KKAlipayHelper/Classes/KKAlipayManager.m; sourceTree = "<group>"; };
+		3681B55ADB4EFF5F44F7741CAE41A5CE /* KKAlipayHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKAlipayHelper-prefix.pch"; sourceTree = "<group>"; };
 		36D4A53EE33E7CE076FE4DA4C19D13C9 /* NSString+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RACSequenceAdditions.m"; path = "ReactiveObjC/NSString+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		382DD983F48FBCB51B6870E4E36C6305 /* NSObject+RACSelectorSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACSelectorSignal.m"; path = "ReactiveObjC/NSObject+RACSelectorSignal.m"; sourceTree = "<group>"; };
 		391C38C91BE77ED34EAA01D19E6568FE /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
@@ -729,7 +728,6 @@
 		495C168B51E00637B3E5F61A3BF7D387 /* NSTimer+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+YYAdd.m"; path = "YYKit/Base/Foundation/NSTimer+YYAdd.m"; sourceTree = "<group>"; };
 		49B35B2E60B889E98F055007C5CEF81A /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		49CC81A205E388AC89EC2183B60382BF /* UITableView+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+YYAdd.m"; path = "YYKit/Base/UIKit/UITableView+YYAdd.m"; sourceTree = "<group>"; };
-		49DF5E3D5F28A0F6C405F0C4AEA10704 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = KKAlipayHelper/Classes/Libraries/libssl.a; sourceTree = "<group>"; };
 		4A9088FDB60DAF92D0DBD23F5D4F9284 /* RACKVOProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACKVOProxy.m; path = ReactiveObjC/RACKVOProxy.m; sourceTree = "<group>"; };
 		4AEE6F4D65CDBAD4B20A602D32EC62F6 /* RACTupleSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTupleSequence.m; path = ReactiveObjC/RACTupleSequence.m; sourceTree = "<group>"; };
 		4B1756C5820E3F67C719B7261C231CBA /* YYWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYWeakProxy.m; path = YYKit/Utility/YYWeakProxy.m; sourceTree = "<group>"; };
@@ -741,13 +739,14 @@
 		4E0E2E7BB3923C42D717E59609EA5168 /* YYReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYReachability.m; path = YYKit/Utility/YYReachability.m; sourceTree = "<group>"; };
 		4EDD47905361C4AA08C17A31C0F59887 /* UIControl+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+RACSignalSupport.h"; path = "ReactiveObjC/UIControl+RACSignalSupport.h"; sourceTree = "<group>"; };
 		4F1563809BF27059461EBDEF4169DE8E /* NSNotificationCenter+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+RACSupport.m"; path = "ReactiveObjC/NSNotificationCenter+RACSupport.m"; sourceTree = "<group>"; };
+		4FA6B9890305F14380181C660A92417E /* KKAlipayHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KKAlipayHelper.modulemap; sourceTree = "<group>"; };
 		505EE4FBE8B853EC8B7ABEC13E7C350A /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		50EE65F5AB3A0934CEE00D75109B1F7C /* KKAlipayHelper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KKAlipayHelper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		511E5CE36B831666F2F6E6F5E9647EBC /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		522F0B91E5FE3CCECE0590B11E598F7A /* NSEnumerator+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEnumerator+RACSequenceAdditions.m"; path = "ReactiveObjC/NSEnumerator+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		5258168E85045CD28560257110246CB0 /* RACChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACChannel.m; path = ReactiveObjC/RACChannel.m; sourceTree = "<group>"; };
 		52654668600845CADB943EFE2E7E6697 /* _YYWebImageSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _YYWebImageSetter.h; path = YYKit/Image/Categories/_YYWebImageSetter.h; sourceTree = "<group>"; };
 		527F3A2084B10ED0F9CC071A60BB9BD0 /* UIControl+RACSignalSupportPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+RACSignalSupportPrivate.h"; path = "ReactiveObjC/UIControl+RACSignalSupportPrivate.h"; sourceTree = "<group>"; };
+		52A69F2809287BAAB69318D3CAA22068 /* KKAlipayHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAlipayHelper.h; path = KKAlipayHelper/Classes/KKAlipayHelper.h; sourceTree = "<group>"; };
 		52C72B59E5D72654031E0F97EDB9DCFC /* RACScheduler+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACScheduler+Private.h"; path = "ReactiveObjC/RACScheduler+Private.h"; sourceTree = "<group>"; };
 		52CE585EF21483428B0FE55E884D60D9 /* CALayer+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+YYAdd.h"; path = "YYKit/Base/Quartz/CALayer+YYAdd.h"; sourceTree = "<group>"; };
 		53860C4FC894F260B1E0279C0EDE2236 /* YYTextDebugOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextDebugOption.h; path = YYKit/Text/Component/YYTextDebugOption.h; sourceTree = "<group>"; };
@@ -799,16 +798,17 @@
 		6595D4B1690BC155ECF6C7EEB7E87E12 /* RACScopedDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACScopedDisposable.m; path = ReactiveObjC/RACScopedDisposable.m; sourceTree = "<group>"; };
 		65D22CBDCE8CC2F5A931FFEA12D87A71 /* UIScreen+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScreen+YYAdd.m"; path = "YYKit/Base/UIKit/UIScreen+YYAdd.m"; sourceTree = "<group>"; };
 		66181C8F15D389E8E2902EB374730883 /* UIControl+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+YYAdd.m"; path = "YYKit/Base/UIKit/UIControl+YYAdd.m"; sourceTree = "<group>"; };
+		66C0D33F918A3EE3D8824B038B7A7C31 /* KKAlipayHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKAlipayHelper-umbrella.h"; sourceTree = "<group>"; };
 		66D51001B7EA50FB248F4B0F53A16F50 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		6725C6C0CA6A711597D77FBC9DF4DE2E /* RACScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACScheduler.m; path = ReactiveObjC/RACScheduler.m; sourceTree = "<group>"; };
 		678590F670B2ADE619AB16943DBA5783 /* NSObject+RACDeallocating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACDeallocating.h"; path = "ReactiveObjC/NSObject+RACDeallocating.h"; sourceTree = "<group>"; };
 		681FB52AFEDE8E2C036C364707E68083 /* NSObject+YYAddForKVO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYAddForKVO.m"; path = "YYKit/Base/Foundation/NSObject+YYAddForKVO.m"; sourceTree = "<group>"; };
-		6828C21B8C444B0540CBE66926597246 /* KKAlipayItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAlipayItem.h; path = KKAlipayHelper/Classes/KKAlipayItem.h; sourceTree = "<group>"; };
 		68CB4B93854F51CD566C1591E05CC9FF /* YYAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYAnimatedImageView.h; path = YYKit/Image/YYAnimatedImageView.h; sourceTree = "<group>"; };
 		692BD9580EDFBC258F458C774F114C9C /* DWKWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DWKWebView.h; path = dsbridge/DWKWebView.h; sourceTree = "<group>"; };
 		69B877C4B9184B73BA2D5A6F3661505C /* RACSignalSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSignalSequence.h; path = ReactiveObjC/RACSignalSequence.h; sourceTree = "<group>"; };
 		69D1D051FF446BAF7FFD1AE8F15FA10F /* UIColor+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+YYAdd.h"; path = "YYKit/Base/UIKit/UIColor+YYAdd.h"; sourceTree = "<group>"; };
 		69FBE7C0EA6273900F829E262D032C5D /* YYWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYWebImageManager.m; path = YYKit/Image/YYWebImageManager.m; sourceTree = "<group>"; };
+		6A264B41F43DBBCA198A0AAA40E17A30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		6A6BDD96F3B8292C4B4026A0BF7CE5AF /* ReactiveObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReactiveObjC.xcconfig; sourceTree = "<group>"; };
 		6AD7F13022AF17746DDF87B26254FBF6 /* YYTextAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextAttribute.m; path = YYKit/Text/String/YYTextAttribute.m; sourceTree = "<group>"; };
 		6AEA76FC1A3A61952704D4E65369985D /* UIStepper+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIStepper+RACSignalSupport.h"; path = "ReactiveObjC/UIStepper+RACSignalSupport.h"; sourceTree = "<group>"; };
@@ -907,7 +907,6 @@
 		9E93B51758C539CC6BAE367610A98349 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
 		9ED7A31C8212E05DF43E04D3B5E47B6C /* YYAsyncLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYAsyncLayer.m; path = YYKit/Utility/YYAsyncLayer.m; sourceTree = "<group>"; };
 		9F2D0D646B8E93B3BCCCF96627DED4D3 /* NSInvocation+RACTypeParsing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+RACTypeParsing.m"; path = "ReactiveObjC/NSInvocation+RACTypeParsing.m"; sourceTree = "<group>"; };
-		9F5153581769AFD49DA18AA9B30EA809 /* KKAlipayHelper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KKAlipayHelper-Info.plist"; sourceTree = "<group>"; };
 		9F807A8AAD01FF935A51F72E0F5156DE /* NSParagraphStyle+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSParagraphStyle+YYText.m"; path = "YYKit/Text/String/NSParagraphStyle+YYText.m"; sourceTree = "<group>"; };
 		A078D936F9F633C81577C2F630FFE36D /* UIButton+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+RACCommandSupport.m"; path = "ReactiveObjC/UIButton+RACCommandSupport.m"; sourceTree = "<group>"; };
 		A08030E28FCA97BFA5F8DC18FF09B17C /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
@@ -921,7 +920,6 @@
 		A3720E3C7BF8BD82386DFC7B0040E849 /* RACQueueScheduler+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACQueueScheduler+Subclass.h"; path = "ReactiveObjC/RACQueueScheduler+Subclass.h"; sourceTree = "<group>"; };
 		A3E022C2D74B046785442F01F1AB34BB /* Pods_KKAlipayHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKAlipayHelper_Example.framework; path = "Pods-KKAlipayHelper_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43CD31786CBDEBD989176F65D1055F0 /* UITextField+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+YYAdd.h"; path = "YYKit/Base/UIKit/UITextField+YYAdd.h"; sourceTree = "<group>"; };
-		A4E3BCE317A367FBBCC6E647998B2691 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		A571DA38A07F7BFF528591B870258131 /* NSArray+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+YYAdd.m"; path = "YYKit/Base/Foundation/NSArray+YYAdd.m"; sourceTree = "<group>"; };
 		A61FF8D0F6EE8BD6C1F7E2B47D78FC0F /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		A6B1B1C5889CABD09F713AA2C2DC3E18 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
@@ -933,10 +931,12 @@
 		A90260BF2FDBB06D46B198B9FC09D7F0 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
 		A97808488BBDE003A3835791A0129D58 /* Pods-KKAlipayHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKAlipayHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A981766FD9D968DC24661AC2EB2BCB01 /* DSCallInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSCallInfo.h; path = dsbridge/DSCallInfo.h; sourceTree = "<group>"; };
+		A9FDAC6811A629D7B9222CA2BDFCB127 /* KKAlipayHelper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KKAlipayHelper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA70CD5AB401B57670F55ED532AF97A9 /* UIButton+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+YYWebImage.h"; path = "YYKit/Image/Categories/UIButton+YYWebImage.h"; sourceTree = "<group>"; };
 		AB4FDD024FB6E5BDB48069D0AEDF2565 /* YYTextEffectWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextEffectWindow.m; path = YYKit/Text/Component/YYTextEffectWindow.m; sourceTree = "<group>"; };
 		AB5C974A03A20A557BA0FB4DD0368B2B /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
 		ABC83E860A6269A37F06DFE1B7A00457 /* YYTextLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLayout.m; path = YYKit/Text/Component/YYTextLayout.m; sourceTree = "<group>"; };
+		AC97AB50AD65C57CC1A49BDA42F9C6B0 /* KKAlipayHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KKAlipayHelper.xcconfig; sourceTree = "<group>"; };
 		AD6002E352F0049D8E99EE00018FD2AB /* NSObject+RACDeallocating.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACDeallocating.m"; path = "ReactiveObjC/NSObject+RACDeallocating.m"; sourceTree = "<group>"; };
 		AD60CF6A6921E546C1F51AFD031339FE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
 		AD7E23EDCE9690651BA592AEF25BC30C /* RACChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACChannel.h; path = ReactiveObjC/RACChannel.h; sourceTree = "<group>"; };
@@ -945,6 +945,7 @@
 		AED16AD9EAC1955C73FB2109A3E15CDD /* UIGestureRecognizer+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+RACSignalSupport.h"; path = "ReactiveObjC/UIGestureRecognizer+RACSignalSupport.h"; sourceTree = "<group>"; };
 		AF90826E4F1033181129C20A5FD457A3 /* UIScrollView+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+YYAdd.m"; path = "YYKit/Base/UIKit/UIScrollView+YYAdd.m"; sourceTree = "<group>"; };
 		AFA65685B0EE0E3A17DA053D09CBF4AF /* UISegmentedControl+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISegmentedControl+RACSignalSupport.m"; path = "ReactiveObjC/UISegmentedControl+RACSignalSupport.m"; sourceTree = "<group>"; };
+		AFC548853D8A45079772AC259C5B4DC3 /* KKAlipayHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KKAlipayHelper-dummy.m"; sourceTree = "<group>"; };
 		B0355BE6D87597238A1030DC1FA21493 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		B13BA0936A1ABA94E8F1E3DDD3C7FBCB /* NSNotificationCenter+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+YYAdd.m"; path = "YYKit/Base/Foundation/NSNotificationCenter+YYAdd.m"; sourceTree = "<group>"; };
 		B181ACF7384AC70B4B3F89D2380492F2 /* NSString+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RACSequenceAdditions.h"; path = "ReactiveObjC/NSString+RACSequenceAdditions.h"; sourceTree = "<group>"; };
@@ -988,15 +989,16 @@
 		C40BF17D6424C01965B9FDBF475FE0F0 /* Pods-KKAlipayHelper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKAlipayHelper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C459D1C8C44ECBAA6920A0F2F35F8B8A /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		C4CBC90E33BBE67193BC123319A3009F /* Pods-KKAlipayHelper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKAlipayHelper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C601EC0AF92D0B09D2093528A5B26730 /* KKAlipayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAlipayManager.h; path = KKAlipayHelper/Classes/KKAlipayManager.h; sourceTree = "<group>"; };
 		C6786A93F2CAEF9D545796D57900D463 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		C72EBF12C8179919EB14106F4D8871E0 /* UIRefreshControl+RACCommandSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+RACCommandSupport.h"; path = "ReactiveObjC/UIRefreshControl+RACCommandSupport.h"; sourceTree = "<group>"; };
 		C7D7C5C78F535FBD9A5A4D7EB6128DAA /* NSInvocation+RACTypeParsing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+RACTypeParsing.h"; path = "ReactiveObjC/NSInvocation+RACTypeParsing.h"; sourceTree = "<group>"; };
 		C7D7C859FBBA6880E95DE51209A6B70C /* YYThreadSafeArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYThreadSafeArray.h; path = YYKit/Utility/YYThreadSafeArray.h; sourceTree = "<group>"; };
+		C818CAA7FE882863DC006550046D2B3D /* KKAlipayItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAlipayItem.h; path = KKAlipayHelper/Classes/KKAlipayItem.h; sourceTree = "<group>"; };
 		C87CE18D6EAF505F5BA0227A12A18747 /* RACDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDelegateProxy.h; path = ReactiveObjC/RACDelegateProxy.h; sourceTree = "<group>"; };
 		C8D359509DDFB2376912694FC98E751D /* RACSignalSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSignalSequence.m; path = ReactiveObjC/RACSignalSequence.m; sourceTree = "<group>"; };
 		C93D7064C668E63EEE99467C5B2CE5DE /* YYTextLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLine.m; path = YYKit/Text/Component/YYTextLine.m; sourceTree = "<group>"; };
 		CA2622BB732C4ED380DB22DED76C7CEA /* YYImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImageCoder.h; path = YYKit/Image/YYImageCoder.h; sourceTree = "<group>"; };
-		CA2EEACCF03ADCF05856DE17FE545CF1 /* KKAlipayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAlipayManager.h; path = KKAlipayHelper/Classes/KKAlipayManager.h; sourceTree = "<group>"; };
 		CA4D16B43FAAC76CA5B4324C3B869BC4 /* RACEXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEXTRuntimeExtensions.m; path = ReactiveObjC/extobjc/RACEXTRuntimeExtensions.m; sourceTree = "<group>"; };
 		CA667042EAC70253B867F18F0BF3A190 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3AFA262DD892407E6DADC387CF9FED /* UITextField+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+RACSignalSupport.m"; path = "ReactiveObjC/UITextField+RACSignalSupport.m"; sourceTree = "<group>"; };
@@ -1005,13 +1007,11 @@
 		CBEA1B6B7DEFAF31D623ADEBE4E0A232 /* YYKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYKeychain.m; path = YYKit/Utility/YYKeychain.m; sourceTree = "<group>"; };
 		CCCEE0970CBF092EA7F8BB7ADDA0423C /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		CD9CD52F532EE4AA3115D2A5396779CF /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		CEE723B4B7E27878C2FBB158875406DF /* KKAlipayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAlipayManager.m; path = KKAlipayHelper/Classes/KKAlipayManager.m; sourceTree = "<group>"; };
 		D02BE43E987DDC8D56F0740EE967FD7A /* RACSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriber.m; path = ReactiveObjC/RACSubscriber.m; sourceTree = "<group>"; };
 		D076CF67766906BADFDC6B179C92136E /* RACGroupedSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACGroupedSignal.m; path = ReactiveObjC/RACGroupedSignal.m; sourceTree = "<group>"; };
 		D0BC50563C704FA64165AE75080C13DB /* YYTextParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextParser.m; path = YYKit/Text/String/YYTextParser.m; sourceTree = "<group>"; };
 		D1F7C2F8E766981408AB60399DB3277A /* UIBarButtonItem+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+RACCommandSupport.m"; path = "ReactiveObjC/UIBarButtonItem+RACCommandSupport.m"; sourceTree = "<group>"; };
 		D244264BB5A13FB1D1292E35EBA9D026 /* UIColor+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+YYAdd.m"; path = "YYKit/Base/UIKit/UIColor+YYAdd.m"; sourceTree = "<group>"; };
-		D254F7D5EA2CB97A39E73902C665A176 /* KKAlipayHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KKAlipayHelper-dummy.m"; sourceTree = "<group>"; };
 		D2E209742E3673BE01C7B869C271325F /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
 		D4187935E73A452723E5534B7C51BAFC /* RACBlockTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACBlockTrampoline.m; path = ReactiveObjC/RACBlockTrampoline.m; sourceTree = "<group>"; };
 		D51E142868841FE1213735714D9C7EEB /* RACEXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEXTKeyPathCoding.h; path = ReactiveObjC/extobjc/RACEXTKeyPathCoding.h; sourceTree = "<group>"; };
@@ -1035,7 +1035,7 @@
 		DE9D155729D4B05711EC66AA9C0AF79F /* ReactiveObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveObjC-prefix.pch"; sourceTree = "<group>"; };
 		DF1D8493A4E6DD9AA28995318F058E72 /* UIScrollView+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+YYAdd.h"; path = "YYKit/Base/UIKit/UIScrollView+YYAdd.h"; sourceTree = "<group>"; };
 		DF54A2278706BEB07A053CF098D135A7 /* YYTextDebugOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextDebugOption.m; path = YYKit/Text/Component/YYTextDebugOption.m; sourceTree = "<group>"; };
-		E03B453461D34F7FEF4F1F3601B7A97A /* KKAlipayHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKAlipayHelper-prefix.pch"; sourceTree = "<group>"; };
+		DFB2AD0271C9FCFD8A91708ACB6DA64E /* KKAlipayItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAlipayItem.m; path = KKAlipayHelper/Classes/KKAlipayItem.m; sourceTree = "<group>"; };
 		E078A5D061E4DA2BC76E420789D581A0 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		E08BA42EE67574F4C5E29635EFE2DA79 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 		E0B3159C55BF310EBFD5DFE3A72DF6C3 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -1061,7 +1061,6 @@
 		E79555F9E7D2151BD6CE2947B400DDE2 /* YYTextEffectWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextEffectWindow.h; path = YYKit/Text/Component/YYTextEffectWindow.h; sourceTree = "<group>"; };
 		E7D4109F30BDBD7D0DD5263F2D649E77 /* UITextField+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+YYAdd.m"; path = "YYKit/Base/UIKit/UITextField+YYAdd.m"; sourceTree = "<group>"; };
 		E88D81BF51E193137703A37DB7462608 /* dsBridge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = dsBridge.xcconfig; sourceTree = "<group>"; };
-		E8B62CBBA972A5748D8B888F5DB4795F /* KKAlipayItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAlipayItem.m; path = KKAlipayHelper/Classes/KKAlipayItem.m; sourceTree = "<group>"; };
 		E9D9C51F118423EA85B263CBFA2BC6EE /* NSDictionary+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+YYAdd.h"; path = "YYKit/Base/Foundation/NSDictionary+YYAdd.h"; sourceTree = "<group>"; };
 		EA387E08F7D869A44D5694EF005156C3 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		EA4686CA4EF54EA07D7EBC6E2D96BCD7 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
@@ -1072,7 +1071,6 @@
 		EBBCA6C4EC58DEFF5DECF3B2D4FE346C /* UIFont+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+YYAdd.h"; path = "YYKit/Base/UIKit/UIFont+YYAdd.h"; sourceTree = "<group>"; };
 		EC434D8AD41AEF213F7BBCDD28F5A902 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
 		EC85F6A6DB28A4EC1A2D42E82FED1DC4 /* RACSubscriptingAssignmentTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriptingAssignmentTrampoline.h; path = ReactiveObjC/RACSubscriptingAssignmentTrampoline.h; sourceTree = "<group>"; };
-		ECB75023E894C134605E1D7430A8201A /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = KKAlipayHelper/Classes/Libraries/libcrypto.a; sourceTree = "<group>"; };
 		ECE755DBD9FF9D4E8AD25C3EF68357EB /* RACTargetQueueScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTargetQueueScheduler.m; path = ReactiveObjC/RACTargetQueueScheduler.m; sourceTree = "<group>"; };
 		ED3B6ACB7B55481F50A799398C80F91F /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		ED56E1CBFFCF3A044A739B28016CF7C1 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
@@ -1230,15 +1228,6 @@
 			);
 			name = Masonry;
 			path = Masonry;
-			sourceTree = "<group>";
-		};
-		0FC75E5347F180EDA26CC64632D28D3A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ECB75023E894C134605E1D7430A8201A /* libcrypto.a */,
-				49DF5E3D5F28A0F6C405F0C4AEA10704 /* libssl.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		176E9DC74D9C9F74322D0518387C7188 /* Support Files */ = {
@@ -1518,20 +1507,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		437330DCFB45C816FCC59B05499180E4 /* KKAlipayHelper */ = {
+		3CDB3758F2DF66872058A2B0EBE48EC8 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				23CD89F04132B80D8B650E9BF183CC39 /* KKAlipayHelper.h */,
-				6828C21B8C444B0540CBE66926597246 /* KKAlipayItem.h */,
-				E8B62CBBA972A5748D8B888F5DB4795F /* KKAlipayItem.m */,
-				CA2EEACCF03ADCF05856DE17FE545CF1 /* KKAlipayManager.h */,
-				CEE723B4B7E27878C2FBB158875406DF /* KKAlipayManager.m */,
-				0FC75E5347F180EDA26CC64632D28D3A /* Frameworks */,
-				CF104E86C85BA7BCCDEBB46191EB243F /* Pod */,
-				F6E5F434F906A65F755481FDE3305A82 /* Support Files */,
+				A9FDAC6811A629D7B9222CA2BDFCB127 /* KKAlipayHelper.podspec */,
+				6A264B41F43DBBCA198A0AAA40E17A30 /* LICENSE */,
+				2E51B841ED4D99D419955323EBBCAFEE /* README.md */,
 			);
-			name = KKAlipayHelper;
-			path = ../..;
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		485840B112F7F4B538FB5DDC5CE6CBE4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A79DC12C36D483FF904B9C55277BCD0E /* KKAlipayHelper */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		53488C669A2141C4FF292FB5E77DCB6C /* no-arc */ = {
@@ -1659,6 +1650,21 @@
 				56256445E52132A2C96D414534BB258F /* AFURLResponseSerialization.m */,
 			);
 			name = Serialization;
+			sourceTree = "<group>";
+		};
+		A79DC12C36D483FF904B9C55277BCD0E /* KKAlipayHelper */ = {
+			isa = PBXGroup;
+			children = (
+				52A69F2809287BAAB69318D3CAA22068 /* KKAlipayHelper.h */,
+				C818CAA7FE882863DC006550046D2B3D /* KKAlipayItem.h */,
+				DFB2AD0271C9FCFD8A91708ACB6DA64E /* KKAlipayItem.m */,
+				C601EC0AF92D0B09D2093528A5B26730 /* KKAlipayManager.h */,
+				365E7BF261EC8C14592A7204B26B7277 /* KKAlipayManager.m */,
+				3CDB3758F2DF66872058A2B0EBE48EC8 /* Pod */,
+				FBD4593AF19CF69517878907AE8DC207 /* Support Files */,
+			);
+			name = KKAlipayHelper;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		AF54A5AAB05EE86D7DAAA476D69BF211 /* AFNetworking */ = {
@@ -1902,14 +1908,6 @@
 			path = "../Target Support Files/ReactiveObjC";
 			sourceTree = "<group>";
 		};
-		C1E0B4A527D187AEE35601939F24AF96 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				437330DCFB45C816FCC59B05499180E4 /* KKAlipayHelper */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		CBDF436D5CE14FB413795FA7F40422F7 /* Pods-KKAlipayHelper_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -1928,21 +1926,11 @@
 			path = "Target Support Files/Pods-KKAlipayHelper_Example";
 			sourceTree = "<group>";
 		};
-		CF104E86C85BA7BCCDEBB46191EB243F /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				50EE65F5AB3A0934CEE00D75109B1F7C /* KKAlipayHelper.podspec */,
-				A4E3BCE317A367FBBCC6E647998B2691 /* LICENSE */,
-				1D83098A2291C3FB04FFE7E624010C4E /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				C1E0B4A527D187AEE35601939F24AF96 /* Development Pods */,
+				485840B112F7F4B538FB5DDC5CE6CBE4 /* Development Pods */,
 				35E526B6E4CA6A7E89FE8C5A5B1F2259 /* Frameworks */,
 				BB6F4BC5D446E928E4A185FA7894DBDC /* Pods */,
 				7E4626ADC95EEED88A7991A933234F75 /* Products */,
@@ -1997,26 +1985,26 @@
 			path = "../Target Support Files/dsBridge";
 			sourceTree = "<group>";
 		};
-		F6E5F434F906A65F755481FDE3305A82 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				34F7C62CB8E1693226215156AE493079 /* KKAlipayHelper.modulemap */,
-				06526A717C39B5A202A3F8AA500C6F12 /* KKAlipayHelper.xcconfig */,
-				D254F7D5EA2CB97A39E73902C665A176 /* KKAlipayHelper-dummy.m */,
-				9F5153581769AFD49DA18AA9B30EA809 /* KKAlipayHelper-Info.plist */,
-				E03B453461D34F7FEF4F1F3601B7A97A /* KKAlipayHelper-prefix.pch */,
-				1101067224BFFA6F2E005CB167E58789 /* KKAlipayHelper-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KKAlipayHelper";
-			sourceTree = "<group>";
-		};
 		FA53220B733B5B070DE8D41C79AAFBC1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				76F922D4FB36A91F6EEF2FC3C9684B01 /* SVProgressHUD.bundle */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		FBD4593AF19CF69517878907AE8DC207 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FA6B9890305F14380181C660A92417E /* KKAlipayHelper.modulemap */,
+				AC97AB50AD65C57CC1A49BDA42F9C6B0 /* KKAlipayHelper.xcconfig */,
+				AFC548853D8A45079772AC259C5B4DC3 /* KKAlipayHelper-dummy.m */,
+				14989EF2C9D05AB87008B3C15C30BAE0 /* KKAlipayHelper-Info.plist */,
+				3681B55ADB4EFF5F44F7741CAE41A5CE /* KKAlipayHelper-prefix.pch */,
+				66C0D33F918A3EE3D8824B038B7A7C31 /* KKAlipayHelper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KKAlipayHelper";
 			sourceTree = "<group>";
 		};
 		FD85E5AB013A9940BC6F9B1CC6B06988 /* dsBridge */ = {
@@ -3058,7 +3046,7 @@
 		};
 		0CA4BFBB6D9744E31A1BD09BCC9A2A3F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06526A717C39B5A202A3F8AA500C6F12 /* KKAlipayHelper.xcconfig */;
+			baseConfigurationReference = AC97AB50AD65C57CC1A49BDA42F9C6B0 /* KKAlipayHelper.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -3260,7 +3248,7 @@
 		};
 		58C670E7B7EDB01F7ABD82308E72A070 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06526A717C39B5A202A3F8AA500C6F12 /* KKAlipayHelper.xcconfig */;
+			baseConfigurationReference = AC97AB50AD65C57CC1A49BDA42F9C6B0 /* KKAlipayHelper.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
