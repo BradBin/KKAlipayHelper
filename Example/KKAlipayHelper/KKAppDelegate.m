@@ -67,11 +67,6 @@
 }
 
 
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-    [KKAlipayManager.shared handleOpenURL:url sourceApplication:sourceApplication];
-    return true;
-}
-
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options{
     [KKAlipayManager.shared handleOpenURL:url options:options];
     return true;

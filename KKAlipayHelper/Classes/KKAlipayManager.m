@@ -12,6 +12,11 @@ NSString *const kkSafepay      = @"safepay";
 NSString *const kkAlipaySign   = @"alipay://";
 NSString *const kkAlipayClient = @"alipay://alipayclient/?";
 
+
+NSString *const kkResultStatus = @"resultStatus";
+
+
+
 @interface KKAlipayManager ()
 /**
  默认:fasle正式环境
@@ -67,79 +72,81 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
     _isDebug = enable;
 }
 
-- (NSString *)createRandomTradeNumber{
-    NSUInteger count = 15;
-    NSString *sourceString = @"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    NSMutableString *resultString = [[NSMutableString alloc] init];
-    srand((unsigned)time(0));
-    for (NSUInteger i = 0; i < count; i++){
-        NSUInteger index = rand() % [sourceString length];
-        NSString *string = [sourceString substringWithRange:NSMakeRange(index, 1)];
-        [resultString appendString:string];
-    }
-    return resultString;
-}
 
--(void)setPrivateKey:(NSString *)privateKey rsa2:(BOOL)rsa2{
-    _privateKey = [privateKey copy];
-    _rsa2       = rsa2;
-}
-
--(void)payOrderRequest:(KKAlipayRequest *)orderRequest scheme:(NSString *)scheme success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure{
-    if (orderRequest == nil) {
-#ifdef DEBUG
-        NSLog(@"支付宝请求信息类型为空");
-#endif
-        return;
-    }
-    if ([self kk_isNotBlank:scheme] == false) {
-#ifdef DEBUG
-        NSLog(@"支付宝scheme为空");
-#endif
-        return;
-    }
-    //拼接商品信息
-    NSString *orderString       = [orderRequest kk_orderRequestWihtEncoded:false];
-    NSString *encodeOrderString = [orderRequest kk_orderRequestWihtEncoded:true];
+-(void)payOrder:(NSString *)order scheme:(NSString *)scheme success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure{
     
-    if ([self kk_isNotBlank:encodeOrderString] == false) {
-#ifdef DEBUG
-        NSLog(@"支付宝请求信息类型为空");
-#endif
-        return;
-    }
-#ifdef DEBUG
-    NSLog(@"orderString:%@  \n  encodeOrderString:%@",orderString,encodeOrderString);
-#endif
     self.success = success;
     self.failure = failure;
     
-    
-  
-    //进行验签名
-    if ([self kk_isNotBlank:self.privateKey]) {
-        
-        // NOTE: 获取私钥并将商户信息签名，外部商户的加签过程请务必放在服务端，防止公私钥数据泄露；
-        //       需要遵循RSA签名规范，并将签名字符串base64编码和UrlEncode
-        
-        //将签名成功字符串格式化为订单字符串,请严格按照该格式
-        
-        
-        __weak __typeof(self) weakSelf = self;
-        [AlipaySDK.defaultService payOrder:orderString fromScheme:scheme callback:^(NSDictionary *resultDic) {
-            __strong __typeof(weakSelf) strongSelf = weakSelf;
-            NSLog(@"-----%@",resultDic);
-            
-        }];
-    }else{
-        //验证签名失败
-        if (self.failure) {
-            NSMutableDictionary *dict = NSMutableDictionary.dictionary;
-            self.failure(KKAlipayResultStatusFailure, dict);
-        }
+    if ([self kk_isNotBlank:order] == false) {
+        NSMutableDictionary *dict = NSMutableDictionary.dictionary;
+        self.failure(KKAlipayResultStatusFailure, dict);
+        return;
     }
+    
+    if ([self kk_isNotBlank:scheme] == false) {
+        NSMutableDictionary *dict = NSMutableDictionary.dictionary;
+        self.failure(KKAlipayResultStatusFailure, dict);
+        return;
+    }
+    
+    
+    __weak __typeof(self) weakSelf = self;
+    [AlipaySDK.defaultService payOrder:order fromScheme:scheme callback:^(NSDictionary *resultDic) {
+        __strong __typeof(weakSelf) strongSelf = weakSelf;
+        if (resultDic) {
+            if ([resultDic.allKeys containsObject:kkResultStatus]) {
+                NSInteger statusCode = [[resultDic objectForKey:kkResultStatus] integerValue];
+                KKAlipayResultStatus result = KKAlipayResultStatusFailure;
+                switch (statusCode) {
+                    case 9000:{
+                        if (strongSelf.success)
+                            strongSelf.success(KKAlipayResultStatusSuccess, resultDic);
+                    } break;
+                        
+                        case 8000:
+                        result = KKAlipayResultStatusFailure;
+                        break;
+                        
+                    case 4000:{
+                        if (strongSelf.failure)
+                            strongSelf.failure(KKAlipayResultStatusFailure, resultDic);
+                    } break;
+                        
+                    case 6001:{
+                        if (strongSelf.failure)
+                            strongSelf.failure(KKAlipayResultStatusCancel, resultDic);
+                    } break;
+                        
+                    case 6002:{
+                        if (strongSelf.failure)
+                            strongSelf.failure(KKAlipayResultStatusNetworkError, resultDic);
+                    } break;
+                        
+                    case 6004:{
+                        if (strongSelf.failure)
+                            strongSelf.failure(KKAlipayResultStatusUnknown, resultDic);
+                    }break;
+                    
+                    default:{
+                        if (strongSelf.failure)
+                            strongSelf.failure(KKAlipayResultStatusOthers, resultDic);
+                    } break;
+                }
+            
+            }else{
+                if (strongSelf.failure) {
+                    strongSelf.failure(KKAlipayResultStatusFailure, resultDic);
+                }
+            }
+        }else{
+            if (strongSelf.failure) {
+                NSMutableDictionary *dict = NSMutableDictionary.dictionary;
+                strongSelf.failure(KKAlipayResultStatusFailure, dict);
+            }
+        }
+    }];
 }
-
 
 
 
@@ -147,12 +154,12 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
     if ([url.host isEqualToString:kkSafepay]) {
         // 支付跳转支付宝钱包进行支付，处理支付结果
         [AlipaySDK.defaultService processAuthResult:url standbyCallback:^(NSDictionary *result) {
-           
+            
         }];
         
         // 授权跳转支付宝钱包进行支付，处理支付结果
         [AlipaySDK.defaultService processAuth_V2Result:url standbyCallback:^(NSDictionary *result) {
-          
+            
         }];
     }
     return true;
@@ -162,12 +169,12 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
     if ([url.host isEqualToString:kkSafepay]) {
         // 支付跳转支付宝钱包进行支付，处理支付结果
         [AlipaySDK.defaultService processAuthResult:url standbyCallback:^(NSDictionary *result) {
-          
+            
         }];
         
         // 授权跳转支付宝钱包进行支付，处理支付结果
         [AlipaySDK.defaultService processAuth_V2Result:url standbyCallback:^(NSDictionary *result) {
-          
+            
         }];
     }
     return true;
@@ -192,21 +199,11 @@ NSString *const kkAlipayClient = @"alipay://alipayclient/?";
 
 
 
-#pragma mark -
-- (NSString *) kk_URLEncodedString:(NSString *)urlString{
-   urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet];
-    return urlString;
-}
-
-
-
-
-
 #pragma mark - private method
 #pragma mark - 判断字符串是否为空
 /**
  判断字符串是否为空,并返回结果
-
+ 
  @param string 字符串
  @return true:字符串不为空 otherwise:false则反之
  */

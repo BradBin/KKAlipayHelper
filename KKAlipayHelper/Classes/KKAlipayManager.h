@@ -12,10 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 typedef NS_ENUM(NSInteger,KKAlipayResultStatus) {
-    KKAlipayResultStatusSuccess,        //支付成功
-    KKAlipayResultStatusFailure,        //支付失败
-    KKAlipayResultStatusCancel,         //支付取消
-    KKAlipayResultStatusUnknownCancel   //支付取消，交易已发起，状态不确定，商户需查询商户后台确认支付状态
+    KKAlipayResultStatusSuccess,        //9000支付成功
+    KKAlipayResultStatusFailure,        //4000支付失败
+    KKAlipayResultStatusCancel,         //6001支付取消
+    KKAlipayResultStatusNetworkError,   //6002支付中发生网络错误
+    KKAlipayResultStatusUnknown,        //6004支付取消，交易已发起，状态不确定，商户需查询商户后台确认支付状态
+    KKAlipayResultStatusOthers          //支付取消，交易已发起，状态不确定，商户需查询商户后台确认支付状态
 };
 
 /**
@@ -50,32 +52,16 @@ typedef void(^ _Nullable KKAlipayBlock)(KKAlipayResultStatus status,NSDictionary
 - (void)setDebugEnabled:(BOOL)enable;
 
 /**
- 生成15位随机订单编号
-
- @return 随机订单编号
- */
-- (NSString *)createRandomTradeNumber;
-
-/**
- 应用私钥,私钥类型,默认rsa
- 
- @param privateKey 私钥
- @param rsa2 私钥类型 默认false:rsa 反之true:rsa2
- */
-- (void)setPrivateKey:(NSString *)privateKey rsa2:(BOOL)rsa2;
-
-/**
  拉起支付宝支付
  备注:支付成功则去后台查询支付结果,再去展示给用户实际支付结果页面,一定
  不能以客户端返回作为用户支付结果
 
- @param orderRequest 支付签名请求,此签名由服务器签名订单后生成
- @param scheme url scheme
- @param success 成功h回调block
+ @param order 支付签名请求,此签名由服务器签名订单后生成
+ @param scheme scheme
+ @param success 成功回调block
  @param failure 失败回调block
  */
-- (void)payOrderRequest:(nonnull KKAlipayRequest *)orderRequest scheme:(NSString *)scheme success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure;
-
+- (void)payOrder:(nonnull NSString *)order scheme:(NSString *)scheme success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure;
 
 /**
  处理客户端回调
