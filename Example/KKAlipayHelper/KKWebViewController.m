@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _webURLString = @"https://www.baidu.com";
+    _webURLString = @"https://gateway.51allin.io/alipayM.html?oid=402019061023043811618&amount=97.95";
     [self kk_setupItem];
     [self kk_setupView];
     [self kk_setupViewModel];
@@ -199,13 +199,20 @@
 
 //根据URL决定是否跳转导航
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
-    NSString *urlString = navigationAction.request.URL.absoluteString;
-    NSLog(@"RequestURL - %@",urlString);
+    NSString* reqUrl = navigationAction.request.URL.absoluteString;
+    if ([reqUrl hasPrefix:@"alipays://"] || [reqUrl hasPrefix:@"alipay://"]) {
+        BOOL bSucc = [[UIApplication sharedApplication]openURL:navigationAction.request.URL];
+        if (!bSucc) {
+            // NOTE: 跳转itune下载支付宝App
+            NSString* urlStr = @"https://itunes.apple.com/cn/app/zhi-fu-bao-qian-bao-yu-e-bao/id333206289?mt=8";
+            NSLog(@"执行相关操作 :  %@",urlStr);
+        }
+    }
     decisionHandler(WKNavigationActionPolicyAllow);
 }
 
 //是否允许加载内容
--(void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
+-(void)webView:(WKWebView *)webView decidePolicyForNavigatiionResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
     decisionHandler(WKNavigationResponsePolicyAllow);
 }
 

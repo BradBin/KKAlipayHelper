@@ -99,7 +99,8 @@ NSString *const kkResultStatus = @"resultStatus";
                 NSInteger statusCode = [[resultDic objectForKey:kkResultStatus] integerValue];
                 KKAlipayResultStatus result = KKAlipayResultStatusFailure;
                 switch (statusCode) {
-                    case 9000:{
+                    case 9000:
+                    {
                         if (strongSelf.success)
                             strongSelf.success(KKAlipayResultStatusSuccess, resultDic);
                     } break;
@@ -108,22 +109,26 @@ NSString *const kkResultStatus = @"resultStatus";
                         result = KKAlipayResultStatusFailure;
                         break;
                         
-                    case 4000:{
+                    case 4000:
+                    {
                         if (strongSelf.failure)
                             strongSelf.failure(KKAlipayResultStatusFailure, resultDic);
                     } break;
                         
-                    case 6001:{
+                    case 6001:
+                    {
                         if (strongSelf.failure)
                             strongSelf.failure(KKAlipayResultStatusCancel, resultDic);
                     } break;
                         
-                    case 6002:{
+                    case 6002:
+                    {
                         if (strongSelf.failure)
                             strongSelf.failure(KKAlipayResultStatusNetworkError, resultDic);
                     } break;
                         
-                    case 6004:{
+                    case 6004:
+                    {
                         if (strongSelf.failure)
                             strongSelf.failure(KKAlipayResultStatusUnknown, resultDic);
                     }break;
