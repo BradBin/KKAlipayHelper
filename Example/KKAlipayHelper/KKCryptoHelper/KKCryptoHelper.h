@@ -18,6 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy,readonly) NSString *threeDesKey;
 
 /**
+ 是RSA2还是RSA类型 默认是false is RSA
+ */
+@property (nonatomic,assign,readonly) BOOL isRSA2;
+
+/**
  单例管理对象
 
  @return 对象实例
@@ -40,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param string 待加密字符串
  @return 3DES加密后的字符串
  */
-- (nonnull NSString *)kk_encrypt3DESWithString:(nonnull NSString *)string;
+- (nonnull NSString *)kk_3DES_EncryptWithString:(nonnull NSString *)string;
 
 /**
  对字符串进行3DES解密
@@ -48,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param string 3DES加密字符串
  @return 解密后字符串
  */
-- (nonnull NSString *)kk_decrypt3DESWithCryptoString:(nonnull NSString *)string ;
+- (nonnull NSString *)kk_3DES_DecryptWithCryptoString:(nonnull NSString *)string ;
 
 /**
  对字符串进行3DES加密
@@ -57,7 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param key key秘钥
  @return 3DES加密后的字符串
  */
-- (nonnull NSString *)kk_encrypt3DESWithString:(nonnull NSString *)string key:(nonnull NSString *)key;
+- (nonnull NSString *)kk_3DES_EncryptWithString:(nonnull NSString *)string key:(nonnull NSString *)key;
 
 /**
  对字符串进行3DES解密
@@ -66,76 +71,58 @@ NS_ASSUME_NONNULL_BEGIN
  @param key key秘钥
  @return 解密后字符串
  */
-- (nonnull NSString *)kk_decrypt3DESWithCryptoString:(nonnull NSString *)string key:(nonnull NSString *)key;
+- (nonnull NSString *)kk_3DES_DecryptWithCryptoString:(nonnull NSString *)string key:(nonnull NSString *)key;
 
 
 
 
 /***************RSA加密/解密相关部分*****************/
 
-/**
- 对字符串进行公钥加密码,生成Base64字符串
-
- @param string 字符串
- @param key 公钥
- @return base64字符串
- */
-- (nonnull NSString *)kk_encryptRSAWithString:(nonnull NSString *)string publicKey:(nonnull NSString *)key;
 
 /**
- 对字符串进行共公钥解密
+ 设置是RSA2还是RSA类型
 
- @param string 待解密的字符串
- @param key 公钥
- @return 解密后字符串
+ @param rsa2 默认:false is RSA ,Otherwise true is RSA2
  */
-- (nonnull NSString *)kk_decryptRSAWithCryptoString:(nonnull NSString *)string publicKey:(nonnull NSString *)key;
+- (void)kk_setRSA2:(BOOL)rsa2;
 
 /**
- 对NSData进行公钥加密
+ 对字符串进行RSA公钥加密(公钥:.der)
 
- @param data data
- @param key 公钥
- @return 加密的data
+ @param str 需要加密的字符串
+ @param path .der格式的公钥文件路径
+ @return 加密后的字符串
  */
-- (nonnull NSData *)kk_encryptRSAWithData:(nonnull NSData *)data publicKey:(nonnull NSString *)key;
+- (NSString *)kk_RSA_EncryptString:(NSString *)str publicKeyWithContentsOfFile:(NSString *)path;
 
 /**
- 对加密后data进行公钥解密
+ 对字符串进行RSA公钥加密(公钥:.p12文件)
 
- @param data 待解密的data
- @param key 公钥
- @return 解密后的data
+ @param str 需要加密的字符串
+ @param path .p12格式的私钥文件路径
+ @param password 私钥文件密码
+ @return 加密后的字符串
  */
-- (nonnull NSData *)kk_decryptRSAWithCryptoData:(nonnull NSData *)data publicKey:(nonnull NSString *)key;
+- (NSString *)kk_RSA_DecryptString:(NSString *)str privateKeyWithContentsOfFile:(NSString *)path password:(NSString *)password;
 
 /**
- 对字符串进行私钥加密
+ 对字符串进行RSA公钥加密
 
- @param string 待加密的字符串
- @param key 私钥
- @return 加密后字符串
+ @param str 需要加密的字符串
+ @param pubKey 公钥字符串
+ @return 加密后的字符串
  */
-- (nonnull NSString *)kk_decryptRSAWithCryptoString:(NSString *)string privateKey:(NSString *)key;
+- (NSString *)kk_RSA_EncryptString:(NSString *)str publicKey:(NSString *)pubKey;
 
 /**
- 对NSData进行私钥解密
+ 对待解密的字符串进行私钥解密
 
- @param data 待解密的data
- @param key 私钥
- @return 解密后的data
+ @param str 待解密的字符串
+ @param privKey 私钥
+ @return 解密后的字符串
  */
-- (nonnull NSData *)kk_decryptRSAWithCryptoData:(NSData *)data privateKey:(NSString *)key;
+- (NSString *)kk_RSA_DecryptString:(NSString *)str privateKey:(NSString *)privKey;
 
-/**
- 验签并返回结果
-
- @param originData originData
- @param signData signData
- @param key 公钥
- @return 验签结果
- */
-- (OSStatus)kk_verifyWithOriginData:(NSData *)originData signData:(NSData *)signData publicKey:(NSString *)key;
 
 
 @end
