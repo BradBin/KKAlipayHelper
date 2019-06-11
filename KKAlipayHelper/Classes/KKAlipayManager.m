@@ -11,11 +11,10 @@
 NSString *const kkSafepay      = @"safepay";
 NSString *const kkAlipaySign   = @"alipay://";
 NSString *const kkAlipayClient = @"alipay://alipayclient/?";
-
-
 NSString *const kkResultStatus = @"resultStatus";
 
-
+NSString *const kkProcessUrlPay = @"isProcessUrlPay";
+NSString *const kkReturnUrl = @"returnUrl";
 
 @interface KKAlipayManager ()
 /**
@@ -37,10 +36,16 @@ NSString *const kkResultStatus = @"resultStatus";
  支付成功回调block
  */
 @property (nonatomic, copy) KKAlipayBlock success;
+
 /**
  支付失败回调block
  */
 @property (nonatomic, copy) KKAlipayBlock failure;
+
+/**
+ 支付结果需要请求后台核实回调block
+ */
+@property (nonatomic, copy) KKAlipayBlock proccess;
 
 @end
 
@@ -72,7 +77,6 @@ NSString *const kkResultStatus = @"resultStatus";
     _isDebug = enable;
 }
 
-
 -(void)payOrder:(NSString *)order scheme:(NSString *)scheme success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure{
     
     self.success = success;
@@ -89,120 +93,177 @@ NSString *const kkResultStatus = @"resultStatus";
         self.failure(KKAlipayResultStatusFailure, dict);
         return;
     }
-    
-    
+
     __weak __typeof(self) weakSelf = self;
     [AlipaySDK.defaultService payOrder:order fromScheme:scheme callback:^(NSDictionary *resultDic) {
         __strong __typeof(weakSelf) strongSelf = weakSelf;
-        if (resultDic) {
-            if ([resultDic.allKeys containsObject:kkResultStatus]) {
-                NSInteger statusCode = [[resultDic objectForKey:kkResultStatus] integerValue];
-                KKAlipayResultStatus result = KKAlipayResultStatusFailure;
-                switch (statusCode) {
-                    case 9000:
-                    {
-                        if (strongSelf.success)
-                            strongSelf.success(KKAlipayResultStatusSuccess, resultDic);
-                    } break;
-                        
-                        case 8000:
-                        result = KKAlipayResultStatusFailure;
-                        break;
-                        
-                    case 4000:
-                    {
-                        if (strongSelf.failure)
-                            strongSelf.failure(KKAlipayResultStatusFailure, resultDic);
-                    } break;
-                        
-                    case 6001:
-                    {
-                        if (strongSelf.failure)
-                            strongSelf.failure(KKAlipayResultStatusCancel, resultDic);
-                    } break;
-                        
-                    case 6002:
-                    {
-                        if (strongSelf.failure)
-                            strongSelf.failure(KKAlipayResultStatusNetworkError, resultDic);
-                    } break;
-                        
-                    case 6004:
-                    {
-                        if (strongSelf.failure)
-                            strongSelf.failure(KKAlipayResultStatusUnknown, resultDic);
-                    }break;
-                    
-                    default:{
-                        if (strongSelf.failure)
-                            strongSelf.failure(KKAlipayResultStatusOthers, resultDic);
-                    } break;
-                }
-            
-            }else{
-                if (strongSelf.failure) {
-                    strongSelf.failure(KKAlipayResultStatusFailure, resultDic);
-                }
-            }
-        }else{
-            if (strongSelf.failure) {
-                NSMutableDictionary *dict = NSMutableDictionary.dictionary;
-                strongSelf.failure(KKAlipayResultStatusFailure, dict);
-            }
-        }
+        [strongSelf kk_handlePayOrderWithResultDic:resultDic];
     }];
 }
 
+-(void)payOrder:(NSString *)order scheme:(NSString *)scheme dynamicLaunch:(BOOL)dynamicLaunch success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure{
+    
+    self.success = success;
+    self.failure = failure;
+    if ([self kk_isNotBlank:order] == false) {
+        NSMutableDictionary *dict = NSMutableDictionary.dictionary;
+        self.failure(KKAlipayResultStatusFailure, dict);
+        return;
+    }
+    
+    if ([self kk_isNotBlank:scheme] == false) {
+        NSMutableDictionary *dict = NSMutableDictionary.dictionary;
+        self.failure(KKAlipayResultStatusFailure, dict);
+        return;
+    }
+    
+     __weak __typeof(self) weakSelf = self;
+    [AlipaySDK.defaultService payOrder:order dynamicLaunch:dynamicLaunch fromScheme:scheme callback:^(NSDictionary *resultDic) {
+        __strong __typeof(weakSelf) strongSelf = weakSelf;
+        [strongSelf kk_handlePayOrderWithResultDic:resultDic];
+    }];
+}
 
+/**
+ 处理拉起支付宝的结果
+
+ @param resultDic resultDic
+ */
+- (void)kk_handlePayOrderWithResultDic:(NSDictionary *)resultDic{
+    if (resultDic) {
+        if ([resultDic.allKeys containsObject:kkResultStatus]) {
+            NSInteger statusCode = [[resultDic objectForKey:kkResultStatus] integerValue];
+            KKAlipayResultStatus result = KKAlipayResultStatusFailure;
+            switch (statusCode) {
+                case 9000:
+                {
+                    if (self.success)
+                        self.success(KKAlipayResultStatusSuccess, resultDic);
+                } break;
+                    
+                case 8000:
+                    result = KKAlipayResultStatusFailure;
+                    break;
+                    
+                case 4000:
+                {
+                    if (self.failure)
+                        self.failure(KKAlipayResultStatusFailure, resultDic);
+                } break;
+                    
+                case 6001:
+                {
+                    if (self.failure)
+                        self.failure(KKAlipayResultStatusCancel, resultDic);
+                } break;
+                    
+                case 6002:
+                {
+                    if (self.failure)
+                        self.failure(KKAlipayResultStatusNetworkError, resultDic);
+                } break;
+                    
+                case 6004:
+                {
+                    if (self.failure)
+                        self.failure(KKAlipayResultStatusUnknown, resultDic);
+                }break;
+                    
+                default:{
+                    if (self.failure)
+                        self.failure(KKAlipayResultStatusOthers, resultDic);
+                } break;
+            }
+            
+        }else{
+            if (self.failure) {
+                self.failure(KKAlipayResultStatusFailure, resultDic);
+            }
+        }
+    }else{
+        if (self.failure) {
+            NSMutableDictionary *dict = NSMutableDictionary.dictionary;
+            self.failure(KKAlipayResultStatusFailure, dict);
+        }
+    }
+}
 
 -(BOOL)handleOpenURL:(NSURL *)url{
-    if ([url.host isEqualToString:kkSafepay]) {
-        // 支付跳转支付宝钱包进行支付，处理支付结果
-        [AlipaySDK.defaultService processAuthResult:url standbyCallback:^(NSDictionary *result) {
-            
-        }];
-        
-        // 授权跳转支付宝钱包进行支付，处理支付结果
-        [AlipaySDK.defaultService processAuth_V2Result:url standbyCallback:^(NSDictionary *result) {
-            
-        }];
-    }
+    [self kk_handleOpenURL:url];
     return true;
 }
 
 -(BOOL)handleOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication{
-    if ([url.host isEqualToString:kkSafepay]) {
-        // 支付跳转支付宝钱包进行支付，处理支付结果
-        [AlipaySDK.defaultService processAuthResult:url standbyCallback:^(NSDictionary *result) {
-            
-        }];
-        
-        // 授权跳转支付宝钱包进行支付，处理支付结果
-        [AlipaySDK.defaultService processAuth_V2Result:url standbyCallback:^(NSDictionary *result) {
-            
-        }];
-    }
+   [self kk_handleOpenURL:url];
     return true;
 }
-
 
 -(BOOL)handleOpenURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+   [self kk_handleOpenURL:url];
+    return true;
+}
+
+/**
+ 支付跳转支付宝钱包进行支付，处理支付结果
+
+ @param url url
+ */
+- (void)kk_handleOpenURL:(NSURL *)url{
     if ([url.host isEqualToString:kkSafepay]) {
         // 支付跳转支付宝钱包进行支付，处理支付结果
-        [AlipaySDK.defaultService processAuthResult:url standbyCallback:^(NSDictionary *result) {
-            
+        __weak __typeof(self) weakSelf = self;
+        [AlipaySDK.defaultService processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *result) {
+            __strong __typeof(weakSelf) strongSelf = weakSelf;
         }];
         
         // 授权跳转支付宝钱包进行支付，处理支付结果
         [AlipaySDK.defaultService processAuth_V2Result:url standbyCallback:^(NSDictionary *result) {
-            
+            __strong __typeof(weakSelf) strongSelf = weakSelf;
         }];
     }
-    return true;
 }
 
+#pragma mark -
+#pragma mark - 支付宝H5
+/**************************支付宝H5********************************/
 
+- (BOOL)payInterceptorWithUrl:(NSString *)urlString scheme:(NSString *)scheme success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure{
+    
+    self.success = success;
+    self.failure = failure;
+    
+    if ([self kk_isNotBlank:urlString] == false) {
+        return false;
+    }
+    
+    if ([self kk_isNotBlank:scheme] == false) {
+        return false;
+    }
+    
+   BOOL result = [AlipaySDK.defaultService payInterceptorWithUrl:urlString fromScheme:scheme callback:^(NSDictionary *resultDic) {
+       if (resultDic) {
+           if ([[resultDic objectForKey:kkProcessUrlPay] boolValue]) {
+               //支付宝已经处理了该url
+              NSString *returnUrlString = [resultDic objectForKey:kkReturnUrl];
+               
+           }else{
+               
+           }
+       }else{
+           //支付宝H5支付返回结果异常
+       }
+        
+    }];
+    
+    if (result) {
+        //true:为成功获取订单信息并发起支付流程
+    }else{
+        //false:为无法获取订单信息，输入url是普通url
+        
+    }
 
+    return result;
+}
 
 #pragma mark - private method
 #pragma mark - 判断字符串是否为空
@@ -222,6 +283,5 @@ NSString *const kkResultStatus = @"resultStatus";
     }
     return NO;
 }
-
 
 @end

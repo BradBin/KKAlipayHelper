@@ -41,8 +41,6 @@
 }
 
 
-
-
 - (void)kk_setupItem{
     self.navigationItem.title = @"支付宝(web)";
     UIBarButtonItem *item     = [[UIBarButtonItem alloc] initWithTitle:@"关闭"
@@ -75,6 +73,7 @@
         WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
         config.suppressesIncrementalRendering = YES; // 是否支持记忆读取
         DWKWebView *view = [[DWKWebView alloc] initWithFrame:CGRectZero configuration:config];
+         [view setDebugMode:true];
         view.DSUIDelegate = self;
         view.navigationDelegate = self;
         view.allowsBackForwardNavigationGestures = YES;
@@ -105,10 +104,6 @@
         }];
         view;
     });
-    
-    
-    
-    [self.webView setDebugMode:true];
     
     if (self.webApis) {
         for (KKWebApi *webApi in self.webApis) {
@@ -201,9 +196,12 @@
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
     NSString* reqUrl = navigationAction.request.URL.absoluteString;
     if ([reqUrl hasPrefix:@"alipays://"] || [reqUrl hasPrefix:@"alipay://"]) {
-        BOOL bSucc = [[UIApplication sharedApplication]openURL:navigationAction.request.URL];
-        if (!bSucc) {
-            // NOTE: 跳转itune下载支付宝App
+    
+        BOOL canOpen = [UIApplication.sharedApplication canOpenURL:navigationAction.request.URL];
+        if (canOpen) {
+            [[UIApplication sharedApplication]openURL:navigationAction.request.URL];
+        }else{
+            // NOTE:未安装支付宝, 自行处理  跳转itune下载支付宝App
             NSString* urlStr = @"https://itunes.apple.com/cn/app/zhi-fu-bao-qian-bao-yu-e-bao/id333206289?mt=8";
             NSLog(@"执行相关操作 :  %@",urlStr);
         }

@@ -51,6 +51,9 @@ typedef void(^ _Nullable KKAlipayBlock)(KKAlipayResultStatus status,NSDictionary
  */
 - (void)setDebugEnabled:(BOOL)enable;
 
+
+/**************************支付宝APP********************************/
+
 /**
  拉起支付宝支付
  备注:支付成功则去后台查询支付结果,再去展示给用户实际支付结果页面,一定
@@ -62,6 +65,20 @@ typedef void(^ _Nullable KKAlipayBlock)(KKAlipayResultStatus status,NSDictionary
  @param failure 失败回调block
  */
 - (void)payOrder:(nonnull NSString *)order scheme:(NSString *)scheme success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure;
+
+
+/**
+ 拉起支付宝支付 V2
+ 备注:支付成功则去后台查询支付结果,再去展示给用户实际支付结果页面,一定
+ 不能以客户端返回作为用户支付结果
+
+ @param order 支付签名请求,此签名由服务器签名订单后生成
+ @param scheme scheme
+ @param dynamicLaunch 是否使用动态配置策略跳转支付宝支付
+ @param success 成功回调block
+ @param failure 失败回调block
+ */
+- (void)payOrder:(nonnull NSString *)order scheme:(NSString *)scheme dynamicLaunch:(BOOL)dynamicLaunch success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure;
 
 /**
  处理客户端回调
@@ -87,6 +104,23 @@ typedef void(^ _Nullable KKAlipayBlock)(KKAlipayResultStatus status,NSDictionary
  @return 回调结果
  */
 - (BOOL)handleOpenURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
+
+
+
+
+/**************************支付宝H5********************************/
+
+/**
+ H5链接中获取订单串并支付接口(支付宝SDK15.4.0推荐使用)
+
+ @param urlString 拦截的url
+ @param scheme scheme
+ @param success 成功回调block
+ @param failure 失败回调block
+ @return true:成功获取订单信息并发起支付流程;false无法获取订单信息urlString为普通链接urlString
+ */
+- (BOOL)payInterceptorWithUrl:(NSString *)urlString scheme:(NSString *)scheme success:(KKAlipayBlock)success failure:(KKAlipayBlock)failure;
+
 
 @end
 
