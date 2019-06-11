@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  商户签名算法类型
 
- - KKSignTypeRSA2: RSA2
- - KKSignTypeRSA: RSA
+ - KKSignTypeRSA2: RSA2 密钥长度2048
+ - KKSignTypeRSA:  RSA  密钥长度1024
  */
 typedef NS_ENUM(NSUInteger,KKSignType) {
     KKSignTypeRSA2 = 0,
