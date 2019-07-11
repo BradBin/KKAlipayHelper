@@ -8,9 +8,11 @@
 
 #import "KKViewController.h"
 #import "KKWebViewController.h"
+#import "KKGestureView.h"
 
 @interface KKViewController ()
 @property (nonatomic,strong) UIButton *aliPayBtn;
+@property (nonatomic,strong) KKGestureView *gestrueView;
 
 @end
 
@@ -65,6 +67,22 @@
         }];
         button;
     });
+    
+    self.gestrueView = ({
+        KKGestureView *view      = KKGestureView.alloc.init;
+        view.layer.masksToBounds = true;
+        view.layer.cornerRadius  = 8.0f;
+        view.backgroundColor     = UIColor.cyanColor;
+        [self.view addSubview:view];
+        [view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(@140);
+            make.left.mas_equalTo(@50);
+            make.right.mas_equalTo(@-50);
+            make.bottom.equalTo(self.aliPayBtn.mas_top).offset(-100);
+        }];
+        view;
+    });
+    
 }
 
 - (void)kk_aliPayEvent:(UIButton *)sender{

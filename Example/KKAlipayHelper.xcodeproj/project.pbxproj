@@ -28,6 +28,7 @@
 		7773F44E02A0A190406BA87D /* Pods_KKAlipayHelper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3AF3351827AAB920A6CA6A /* Pods_KKAlipayHelper_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		90FE71B319E3C54B1D4E32A9 /* Pods_KKAlipayHelper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D86634D2F062195952E349 /* Pods_KKAlipayHelper_Tests.framework */; };
+		93FF5F0322D72A450052D15D /* KKGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FF5F0222D72A450052D15D /* KKGestureView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		79D86634D2F062195952E349 /* Pods_KKAlipayHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKAlipayHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E3AF3351827AAB920A6CA6A /* Pods_KKAlipayHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKAlipayHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93FF5F0122D72A450052D15D /* KKGestureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKGestureView.h; sourceTree = "<group>"; };
+		93FF5F0222D72A450052D15D /* KKGestureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKGestureView.m; sourceTree = "<group>"; };
 		9C0FC3CC5065F6A556A150BF /* Pods-KKAlipayHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKAlipayHelper_Tests.release.xcconfig"; path = "Target Support Files/Pods-KKAlipayHelper_Tests/Pods-KKAlipayHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D6613256866A97DF5023CB21 /* Pods-KKAlipayHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKAlipayHelper_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KKAlipayHelper_Tests/Pods-KKAlipayHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD1CF0294BA0E572B752485D /* Pods-KKAlipayHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKAlipayHelper_Example.debug.xcconfig"; path = "Target Support Files/Pods-KKAlipayHelper_Example/Pods-KKAlipayHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +196,8 @@
 				0A0C97E422AC0C82006CA333 /* KKWebApi.h */,
 				0A0C97E522AC0C82006CA333 /* KKWebApi.m */,
 				0A0C97E722AC0CA9006CA333 /* KKWebApiProtocol.h */,
+				93FF5F0122D72A450052D15D /* KKGestureView.h */,
+				93FF5F0222D72A450052D15D /* KKGestureView.m */,
 			);
 			name = "Example for KKAlipayHelper";
 			path = KKAlipayHelper;
@@ -440,6 +445,7 @@
 			files = (
 				6003F59E195388D20070C39A /* KKAppDelegate.m in Sources */,
 				0A0C97EF22AC24CC006CA333 /* GTMBase64.m in Sources */,
+				93FF5F0322D72A450052D15D /* KKGestureView.m in Sources */,
 				0A0C97F022AC24CC006CA333 /* KKCryptoHelper.m in Sources */,
 				0A0C97E622AC0C82006CA333 /* KKWebApi.m in Sources */,
 				0A0C97E322AC0261006CA333 /* KKWebViewController.m in Sources */,
